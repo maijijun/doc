@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;sandbox.partner.api.bri.co.id&#x2F;oauth&#x2F;client_cre">
+<meta name="description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;oauth&#x2F;token Request Header">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Token">
 <meta property="og:url" content="http://example.com/api/authentication/token.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;sandbox.partner.api.bri.co.id&#x2F;oauth&#x2F;client_cre">
+<meta property="og:description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;oauth&#x2F;token Request Header">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-22T06:07:26.019Z">
+<meta property="article:modified_time" content="2020-12-22T08:31:19.717Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
@@ -320,7 +320,7 @@
       
       <div class="post-body">
           <p>This endpoint is used to generate <code>token</code>. This token is required for making an API call. Put this token in <strong>Authorization</strong> header.</p>
-<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>sandbox.partner.api.bri.co.id<span class="regexp">/oauth/</span>client_credential/accesstoken?grant_type=client_credentials</span><br></pre></td></tr></table></figure>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>dev.afinpay.co.id<span class="regexp">/oauth/</span>token</span><br></pre></td></tr></table></figure>
 <h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
 <thead>
 <tr>
@@ -341,20 +341,14 @@
 <th align="center">Field</th>
 <th align="center">Data Type</th>
 <th align="center">Mandatory</th>
-<th align="center">Description</th>
+<th align="center">Value</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">grant_type</td>
 <td align="center">string</td>
 <td align="center">Yes</td>
-<td align="center">Consumer key</td>
-</tr>
-<tr>
-<td align="center">client_secret</td>
-<td align="center">string</td>
-<td align="center">Yes</td>
-<td align="center">Consumer secret</td>
+<td align="center">client_credentials</td>
 </tr>
 </tbody></table>
 
