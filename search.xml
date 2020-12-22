@@ -6,4 +6,1621 @@
     <content><![CDATA[<p>​        AFT API Docs.</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>Merchant Document</title>
+    <url>/mch/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Document</title>
+    <url>/api/index.html</url>
+    <content><![CDATA[<h2 id="Document-Version"><a href="#Document-Version" class="headerlink" title="Document Version"></a>Document Version</h2><table>
+<thead>
+<tr>
+<th align="center">Date</th>
+<th align="center">Doc Version</th>
+<th align="center">Description</th>
+<th align="center">PIC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">2020/12/21</td>
+<td align="center">1.0.0</td>
+<td align="center"></td>
+<td align="center">Wu</td>
+</tr>
+</tbody></table>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Overview of AFT API:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Method</th>
+<th align="center">Endpoint</th>
+<th align="center">Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">POST</td>
+<td align="center">/bill/create</td>
+<td align="center">create a new virtual Account.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/bill/query</td>
+<td align="center">inquiry an existing va.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/bill/status</td>
+<td align="center">inquiry va status.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/payment/payment</td>
+<td align="center">do payment</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/payment/details</td>
+<td align="center">inquiry transfer status.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL that you can access:</p>
+<table>
+<thead>
+<tr>
+<th align="center">URL</th>
+<th align="center">Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://dev.afinpay.co.id/">https://dev.afinpay.co.id</a></td>
+<td align="center">Development</td>
+</tr>
+<tr>
+<td align="center"><a href="https://api.afinpay.co.id/">https://api.afinpay.co.id</a></td>
+<td align="center">Production</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>Bank Code</title>
+    <url>/api/appendix/index.html</url>
+    <content><![CDATA[<h3 id="Bank-Code-gt-gt"><a href="#Bank-Code-gt-gt" class="headerlink" title="Bank Code &gt;&gt;"></a><a href="./bank_code.html">Bank Code &gt;&gt;</a></h3><h3 id="Response-Code-gt-gt"><a href="#Response-Code-gt-gt" class="headerlink" title="Response Code &gt;&gt;"></a><a href="./resp_code.html">Response Code &gt;&gt;</a></h3>]]></content>
+  </entry>
+  <entry>
+    <title>Bank Code</title>
+    <url>/api/appendix/bank_code.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Bank_Code</th>
+<th align="center">Bank_Name</th>
+<th align="center">VA</th>
+<th align="center">In_House</th>
+<th align="center">Online</th>
+<th align="center">RTGS</th>
+<th align="center">LLG</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>Bank</strong></td>
+<td align="center">002</td>
+<td align="center">BANK BRI</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">014</td>
+<td align="center">BANK BCA</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">008</td>
+<td align="center">BANK MANDIRI</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">013</td>
+<td align="center">BANK PERMATA</td>
+<td align="center">✔</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">009</td>
+<td align="center">BANK BNI</td>
+<td align="center">✔</td>
+<td align="center">✔</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">016</td>
+<td align="center">BANK BII MAYBANK</td>
+<td align="center">✔</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">011</td>
+<td align="center">BANK DANAMON</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>3rd-Party</strong></td>
+<td align="center">20001</td>
+<td align="center">ALTOPay</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/api/authentication/index.html</url>
+    <content><![CDATA[<h2 id="Token-gt"><a href="#Token-gt" class="headerlink" title="Token &gt;"></a><a href="./token.html">Token &gt;</a></h2><h2 id="Signature-gt"><a href="#Signature-gt" class="headerlink" title="Signature &gt;"></a><a href="./signature.html">Signature &gt;</a></h2>]]></content>
+  </entry>
+  <entry>
+    <title>Response Code</title>
+    <url>/api/appendix/resp_code.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">Response Code</th>
+<th align="center">Desc</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">Success</td>
+<td align="center">成功</td>
+</tr>
+<tr>
+<td align="center">1000</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2000</td>
+<td align="center">link down</td>
+<td align="center">系统错误</td>
+</tr>
+<tr>
+<td align="center">2010</td>
+<td align="center">Invalid Parameter</td>
+<td align="center">入参错误，详情</td>
+</tr>
+<tr>
+<td align="center">2001</td>
+<td align="center">sign fail</td>
+<td align="center">签名校验失败</td>
+</tr>
+<tr>
+<td align="center">2002</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2003</td>
+<td align="center">Bank/Channel Not Found</td>
+<td align="center">系统不支持该银行</td>
+</tr>
+<tr>
+<td align="center">3000</td>
+<td align="center">Merchant setting not config</td>
+<td align="center">商户配置</td>
+</tr>
+<tr>
+<td align="center">3001</td>
+<td align="center">Merchant has no Access</td>
+<td align="center">商户配置</td>
+</tr>
+<tr>
+<td align="center">3002</td>
+<td align="center">Merchant channel rate is not found for UID</td>
+<td align="center">商户配置</td>
+</tr>
+<tr>
+<td align="center">3003</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3010</td>
+<td align="center">Phone not found</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3100</td>
+<td align="center">Bank does not operate or bank host uncreachable</td>
+<td align="center">银行未响应</td>
+</tr>
+<tr>
+<td align="center">3101</td>
+<td align="center">Switching does not operate or Switching host uncreachable</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3200</td>
+<td align="center">Insufficient fund</td>
+<td align="center">余额不足</td>
+</tr>
+<tr>
+<td align="center">3204</td>
+<td align="center">Exceed Withdrawal/Deposit Amount Limit</td>
+<td align="center">提现受限</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3210</td>
+<td align="center">Exceed Transaction Amount limit</td>
+<td align="center">超出交易额度</td>
+</tr>
+<tr>
+<td align="center">3212</td>
+<td align="center">Amount Transaction is Under RTGS limit Amount</td>
+<td align="center">不够RTGS</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3220</td>
+<td align="center">duplicate transmission</td>
+<td align="center">重复提交</td>
+</tr>
+<tr>
+<td align="center">3221</td>
+<td align="center">already paid</td>
+<td align="center">已支付</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3300</td>
+<td align="center">Suspected Fraud</td>
+<td align="center">可疑</td>
+</tr>
+<tr>
+<td align="center">3310</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">4000</td>
+<td align="center">restricted card</td>
+<td align="center">受限信用卡</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">5000</td>
+<td align="center">incorrect OTP</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">5001</td>
+<td align="center">expired OTP</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">5002</td>
+<td align="center">transaction need OTP</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">401</td>
+<td align="center">Unauthorized</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>Signature</title>
+    <url>/api/authentication/signature.html</url>
+    <content><![CDATA[<h2 id="Simple"><a href="#Simple" class="headerlink" title="Simple"></a>Simple</h2><p>Digital signature ensures reliability and anti-repudiation of data transmitted. Signature is generated by the service requestor, and verified by the service recipient.</p>
+<p>The payload data will be signed with <code>SHA256-HMAC</code> algorithm using your <strong>Consumer Secret</strong>. The signature is formed by the specified <code>payload</code>. The signature value is then encoded with <code>Base64</code> and filled into API requests header <code>AFT-Signature</code>.</p>
+<h3 id="Payload"><a href="#Payload" class="headerlink" title="Payload"></a>Payload</h3><p>Payload consists of <code>path</code>, <code>verb</code>, <code>token</code>, <code>timestamp</code>, and <code>body</code>. Example payload:</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">path</span>=/v<span class="number">1</span>/inquiry/<span class="number">888801000157508</span>&amp;verb=GET&amp;token=Bearer R<span class="number">04</span>XSUbnm<span class="number">1</span>GXNmDiXx<span class="number">9</span>ysWMpFWBr&amp;timestamp=<span class="number">2019</span>-<span class="number">01</span>-<span class="number">02</span>T<span class="number">13</span>:<span class="number">14</span>:<span class="number">15</span>.<span class="number">678</span>Z&amp;body=</span><br></pre></td></tr></table></figure>
+<p>Details of each element inside the payload are explained below:</p>
+<p><strong>1. Path</strong></p>
+<p>The value for <code>path</code> is the URL after hostname and port without the query parameters.</p>
+<p>Example:</p>
+<p>from</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>sandbox.partner.api.bri.co.id<span class="regexp">/v1/</span>transfer/internal?noreferral=<span class="number">12345</span></span><br></pre></td></tr></table></figure>
+<p>to</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="regexp">/v1/</span>transfer/internal</span><br></pre></td></tr></table></figure>
+<p><strong>2. Verb</strong></p>
+<p>HTTP method in uppercase, i.e. <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, and <code>DELETE</code>.</p>
+<p><strong>3. Token</strong></p>
+<p>Token used in Authorization header.</p>
+<p>Example:</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">Bearer</span> R<span class="number">04</span>XSUbnm<span class="number">1</span>GXNmDiXx<span class="number">9</span>ysWMpFWBr</span><br></pre></td></tr></table></figure>
+<p><strong>4. Timestamp</strong></p>
+<p>Timestamp at the moment you call the API. The timestamp format must follow <code>ISO8601</code> format (<code>yyyy-MM-ddTHH:mm:ss.SSSZ</code>). It has to be in the zero UTC offset.</p>
+<p>Example:</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">2019</span>-<span class="number">01</span>-<span class="number">02</span>T<span class="number">13</span>:<span class="number">14</span>:<span class="number">15</span>.<span class="number">678</span>Z</span><br></pre></td></tr></table></figure>
+<p><strong>5. Body</strong></p>
+<p>Request body sent for the API call. Example:</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">&amp;<span class="keyword">body</span>=&#123;<span class="string">&quot;hello&quot;</span>:<span class="string">&quot;world&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>If there is no request body, such as on <code>GET</code> call, leave it empty. Example:</p>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="meta">&amp;body=</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Token</title>
+    <url>/api/authentication/token.html</url>
+    <content><![CDATA[<p>This endpoint is used to generate <code>token</code>. This token is required for making an API call. Put this token in <strong>Authorization</strong> header.</p>
+<h2 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h2><h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>dev.afinpay.co.id<span class="regexp">/oauth/</span>token</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/x-www-form-urlencoded</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Mandatory</th>
+<th align="center">Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">grant_type</td>
+<td align="center">string</td>
+<td align="center">Yes</td>
+<td align="center">client_credentials</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>Create VA</title>
+    <url>/api/va/create_va.html</url>
+    <content><![CDATA[<p>This endpoint is used to create new virtual account.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>dev.afinpay.co.id<span class="regexp">/bill/</span>create</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">appId</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">Merchant ID</td>
+</tr>
+<tr>
+<td align="center">nonceStr</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">timestamp</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sign</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">amount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">type</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">billingType</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customerName</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customerEmail</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">No</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customerPhone</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">No</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">datetimeExpired</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">No</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">No</td>
+<td align="center">API Version</td>
+</tr>
+<tr>
+<td align="center">bankCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="string">&quot;11000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;FDA4EE2E4958E40832ADDB08CE944DF3D7D9DC8D4BF63CD6BEC581BB0686206C&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;type&quot;</span>:<span class="string">&quot;createbilling&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="string">&quot;20191119113337655&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;5a4099eaa1f845a794fa6de6b621301d&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerName&quot;</span>:<span class="string">&quot;qbWW99oEeE58ZV+cR7UBnA==&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerPhone&quot;</span>:<span class="string">&quot;hx7VvHO+FMAmSeAKKl6LEA==&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;billingType&quot;</span>:<span class="string">&quot;c&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerEmail&quot;</span>:<span class="string">&quot;e1L2bviNJ6jx\/c1AkFeCS+VVA+zJfJ5wKRAXKj9Ebq4=&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;datetimeExpired&quot;</span>:<span class="string">&quot;2019-11-20 11:33:37&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574138017733&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">appId</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">Merchant ID</td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">API Version</td>
+</tr>
+<tr>
+<td align="center">nonceStr</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">timestamp</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sign</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">resCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">resMsg</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">resultCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">errorCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">errorMsg</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">orderNo</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">virtualAccount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">amount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;108a753b503c4d2ebcb81ad7fe534557&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574137955272&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;F85E6A62B6DEE219AF92226D99C66650DA7CEFB13977D62BBFC10767423DFA12&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resCode&quot;</span>:<span class="string">&quot;0000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resMsg&quot;</span>:<span class="string">&quot;SUCCESS&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resultCode&quot;</span>:<span class="string">&quot;SUCCESS&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;errorCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorMsg&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;orderNo&quot;</span>:<span class="string">&quot;2019111911323523229&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;virtualAccount&quot;</span>:<span class="string">&quot;8286191119113301&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="string">&quot;11000&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Error-Sample"><a href="#Error-Sample" class="headerlink" title="Error Sample"></a>Error Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;a935824fc95f45a0af52fb58808c8850&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574135690075&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;7BC0495054F122A0634712E896ABC5AD8C5D35C623D754E3E7224C2CD66B81FE&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resCode&quot;</span>:<span class="string">&quot;1000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resMsg&quot;</span>:<span class="string">&quot;check sign fail&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resultCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorMsg&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;orderNo&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;virtualAccount&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="literal">null</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/api/va/index.html</url>
+    <content><![CDATA[<h3 id="Create-VA-gt-gt"><a href="#Create-VA-gt-gt" class="headerlink" title="Create VA &gt;&gt;"></a><a href="./create_va.html">Create VA &gt;&gt;</a></h3><h3 id="Inquiry-VA-gt-gt"><a href="#Inquiry-VA-gt-gt" class="headerlink" title="Inquiry VA &gt;&gt;"></a><a href="./inquiry_va.html">Inquiry VA &gt;&gt;</a></h3><h3 id="Get-VA-Status-gt-gt"><a href="#Get-VA-Status-gt-gt" class="headerlink" title="Get VA Status &gt;&gt;"></a><a href="./get_va_status.html">Get VA Status &gt;&gt;</a></h3>]]></content>
+  </entry>
+  <entry>
+    <title>Get VA Status</title>
+    <url>/api/va/get_va_status.html</url>
+    <content><![CDATA[<p> This endpoint is used to get the payment status from an existing virtual account.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>Inquiry VA</title>
+    <url>/api/va/inquiry_va.html</url>
+    <content><![CDATA[<p>This endpoint is used to get virtual account information that has been created.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>dev.afinpay.co.id<span class="regexp">/bill/</span>query</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">appId</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">Merchant ID</td>
+</tr>
+<tr>
+<td align="center">nonceStr</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">timestamp</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sign</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">No</td>
+<td align="center">API Version</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;C3F3B32B3DBEE2B366065287B035B645CBDCB1052648E12B20046C9CE1EA2DF4&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="string">&quot;20191119104406623&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;a4d6f57ab4ee4d4ab433c75bde980227&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574135066878&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">appId</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td align="center">String</td>
+<td align="center">5</td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">timestamp</td>
+<td align="center">String</td>
+<td align="center">13</td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">sign</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">nonceStr</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">errorCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">resultCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">resCode</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">resMsg</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">errorMsg</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">amount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">orderNo</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">virtualAccount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">paymentAmount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">cumulativePaymentAmount</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">billingType</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">createTime</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">updateTime</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">datetimeExpired</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">datetimePayment</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customerName</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customerPhone</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customerEmail</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">paymentNtb</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">status</td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;1004e0e70934420283a72e6b2d05836a&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574135018034&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;3978A8F0FE2E03F72C6D225F34C38112F00FF5FDD817A6C2AE55F445C0A524CC&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resCode&quot;</span>:<span class="string">&quot;0000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resMsg&quot;</span>:<span class="string">&quot;SUCCESS&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resultCode&quot;</span>:<span class="string">&quot;SUCCESS&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;errorCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorMsg&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;orderNo&quot;</span>:<span class="string">&quot;2019111910430404837&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="string">&quot;20191119104406623&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="string">&quot;11000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;paymentAmount&quot;</span>:<span class="string">&quot;0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;cumulativePaymentAmount&quot;</span>:<span class="string">&quot;0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;billingType&quot;</span>:<span class="string">&quot;c&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;createTime&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;updateTime&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;datetimeExpired&quot;</span>:<span class="number">1574217846000</span>,</span><br><span class="line">   <span class="attr">&quot;datetimePayment&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;virtualAccount&quot;</span>:<span class="string">&quot;8286191119104401&quot;</span>, </span><br><span class="line">   <span class="attr">&quot;customerName&quot;</span>:<span class="string">&quot;Cash User&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerPhone&quot;</span>:<span class="string">&quot;0812123&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerEmail&quot;</span>:<span class="string">&quot;babali@gmail.com&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;paymentNtb&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;description&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;status&quot;</span>:<span class="string">&quot;1&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Sample"><a href="#Error-Sample" class="headerlink" title="Error Sample"></a>Error Sample</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;69d04c2f1e054bb2941d8fb9678572b4&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574133248848&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;22E79B97E10D562496EF478F909D4998CFC21336923BA80AE0821C9D92199C89&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resCode&quot;</span>:<span class="string">&quot;1000&quot;</span>,</span><br><span class="line">   &quot;resMsg&quot;:&quot;Billing.find.fail&quot;,&#x27;</span><br><span class="line">   &quot;resultCode&quot;:null,</span><br><span class="line">   &quot;errorCode&quot;:null,</span><br><span class="line">   &quot;errorMsg&quot;:null,</span><br><span class="line">   &quot;orderNo&quot;:null,</span><br><span class="line">   &quot;outOrderNo&quot;:null,</span><br><span class="line">   &quot;amount&quot;:null,</span><br><span class="line">   &quot;paymentAmount&quot;:null,</span><br><span class="line">   &quot;cumulativePaymentAmount&quot;:null,</span><br><span class="line">   &quot;billingType&quot;:null,</span><br><span class="line">   &quot;createTime&quot;:null,</span><br><span class="line">   &quot;updateTime&quot;:null,</span><br><span class="line">   &quot;datetimeExpired&quot;:null,</span><br><span class="line">   &quot;datetimePayment&quot;:null,</span><br><span class="line">   &quot;virtualAccount&quot;:null,</span><br><span class="line">   &quot;customerName&quot;:null,</span><br><span class="line">   &quot;customerPhone&quot;:null,</span><br><span class="line">   &quot;customerEmail&quot;:null,</span><br><span class="line">   &quot;paymentNtb&quot;:null,</span><br><span class="line">   &quot;description&quot;:null,</span><br><span class="line">   &quot;status&quot;:null</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Internal Transfer</title>
+    <url>/api/transfer/internal_transfer.html</url>
+    <content><![CDATA[<p>This endpoint is used to make transfer between two accounts in same bank.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>External Transfer</title>
+    <url>/api/transfer/external_transfer.html</url>
+    <content><![CDATA[<p> This endpoint is used to  transfer from one bank account to other bank account. </p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/api/transfer/index.html</url>
+    <content><![CDATA[<h3 id="Internal-Transfer-gt-gt"><a href="#Internal-Transfer-gt-gt" class="headerlink" title="Internal Transfer &gt;&gt;"></a><a href="./internal_transfer.html">Internal Transfer &gt;&gt;</a></h3><h3 id="External-Transfer-gt-gt"><a href="#External-Transfer-gt-gt" class="headerlink" title="External Transfer &gt;&gt;"></a><a href="./external_transfer.html">External Transfer &gt;&gt;</a></h3><h3 id="RTGS-Transfer-gt-gt"><a href="#RTGS-Transfer-gt-gt" class="headerlink" title="RTGS Transfer &gt;&gt;"></a><a href="./rtgs.html">RTGS Transfer &gt;&gt;</a></h3><h3 id="LLG-Transfer-gt-gt"><a href="#LLG-Transfer-gt-gt" class="headerlink" title="LLG Transfer &gt;&gt;"></a><a href="./llg.html">LLG Transfer &gt;&gt;</a></h3>]]></content>
+  </entry>
+  <entry>
+    <title>LLG Transfer</title>
+    <url>/api/transfer/llg.html</url>
+    <content><![CDATA[<p>This endpoint is used to make transfer using LLG method.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>RTGS Transfer</title>
+    <url>/api/transfer/rtgs.html</url>
+    <content><![CDATA[<p> This endpoint is used to make transfer using RTGS method.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
 </search>
