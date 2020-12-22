@@ -23,16 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
+<meta name="description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;sandbox.partner.api.bri.co.id&#x2F;oauth&#x2F;client_cre">
 <meta property="og:type" content="website">
-<meta property="og:title" content="AFT">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:title" content="Token">
+<meta property="og:url" content="http://example.com/api/authentication/token.html">
 <meta property="og:site_name" content="AFT">
+<meta property="og:description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;sandbox.partner.api.bri.co.id&#x2F;oauth&#x2F;client_cre">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
+<meta property="article:modified_time" content="2020-12-22T06:07:26.019Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/api/authentication/token">
 
 
 <script class="page-configurations">
@@ -44,7 +48,8 @@
     lang   : 'en'
   };
 </script>
-<title>Archive | AFT</title>
+<title>Token | AFT
+</title>
   
 
 
@@ -157,7 +162,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -170,6 +175,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-Request"><span class="nav-number">1.</span> <span class="nav-text">HTTP Request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Header"><span class="nav-number">2.</span> <span class="nav-text">Request Header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Body"><span class="nav-number">3.</span> <span class="nav-text">Request Body</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -211,49 +217,162 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
-
-
+    <div class="main-inner page posts-expand">
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 1 post. Keep on posting.</span>
-      </div>
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-21T14:13:04+08:00"
-              content="2020-12-21">
-          12-21
-        </time>
-      </div>
+        
+        <ul class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-authentication">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/21/introduction/" itemprop="url">
-            <span itemprop="name">Introduction</span>
-          </a>
-      </div>
+    <a href="/api/authentication/" rel="section"><i class="fa iconfont authentication fa-fw"></i>Authentication</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-virtual-account">
+
+    <a href="/api/va/" rel="section"><i class="fa iconfont va fa-fw"></i>Virtual Account</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-transfer">
+
+    <a href="/api/transfer/" rel="section"><i class="fa iconfont transfer fa-fw"></i>Transfer</a>
+
+  </li>
+
+
+        </ul>
+        
+
+        
+
+                
+
+                    
+                    <ul class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-token">
+
+    <a href="/api/authentication/token.html" rel="section"><i class="fa iconfont authentication fa-fw"></i>Token</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-signature">
+
+    <a href="/api/authentication/signature.html" rel="section"><i class="fa iconfont authentication fa-fw"></i>Signature</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Token
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/api/">API</a></li>
+            <li><a href="/api/authentication/">AUTHENTICATION</a></li>
+            <li>TOKEN</li>
+          
+  </ul>
+</div>
+
+</header>
 
       
-    </header>
-  </article>
+      
+      <div class="post-body">
+          <p>This endpoint is used to generate <code>token</code>. This token is required for making an API call. Put this token in <strong>Authorization</strong> header.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>sandbox.partner.api.bri.co.id<span class="regexp">/oauth/</span>client_credential/accesstoken?grant_type=client_credentials</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/x-www-form-urlencoded</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">grant_type</td>
+<td align="center">string</td>
+<td align="center">Yes</td>
+<td align="center">Consumer key</td>
+</tr>
+<tr>
+<td align="center">client_secret</td>
+<td align="center">string</td>
+<td align="center">Yes</td>
+<td align="center">Consumer secret</td>
+</tr>
+</tbody></table>
 
-
+      </div>
+      
+      
+      
     </div>
-  </div>
-  
-  
-  
+  <ul class="breadcrumb">
+            <li><a href="/api/">API</a></li>
+            <li><a href="/api/authentication/">AUTHENTICATION</a></li>
+            <li>TOKEN</li>
+          
+  </ul>
+
+    
+    
+
 
 
 <script>

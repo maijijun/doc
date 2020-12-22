@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta name="description" content="This endpoint is used to make transfer between two accounts in same bank. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id Request Header   Key Value Mandatory    Content-Type application&#x2F;json Yes   Reques">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Internal Transfer">
+<meta property="og:url" content="http://example.com/api/transfer/internal_transfer.html">
+<meta property="og:site_name" content="AFT">
+<meta property="og:description" content="This endpoint is used to make transfer between two accounts in same bank. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id Request Header   Key Value Mandatory    Content-Type application&#x2F;json Yes   Reques">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
+<meta property="article:modified_time" content="2020-12-22T06:51:57.901Z">
+<meta property="article:author" content="Magi">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/api/transfer/internal_transfer">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+<title>Internal Transfer | AFT
+</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">AFT</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Document</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        
+            
+  <li class="menu-item menu-item-api">
+
+    <a href="/api/" rel="section"><i class="fa iconfont api fa-fw"></i>API</a>
+
+  </li>
+
+
+      
+        <li class="menu-item menu-item-merchant">
+
+    <a href="/mch/" rel="section"><i class="fa fa-user fa-fw"></i>Merchant</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-Request"><span class="nav-number">1.</span> <span class="nav-text">HTTP Request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Header"><span class="nav-number">2.</span> <span class="nav-text">Request Header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Body"><span class="nav-number">3.</span> <span class="nav-text">Request Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Sample"><span class="nav-number">4.</span> <span class="nav-text">Request Sample</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Body"><span class="nav-number">5.</span> <span class="nav-text">Response Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Simple"><span class="nav-number">6.</span> <span class="nav-text">Response Simple</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-Simple"><span class="nav-number">7.</span> <span class="nav-text">Error Simple</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Magi</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+
+      
+
+        
+        <ul class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-authentication">
+
+    <a href="/api/authentication/" rel="section"><i class="fa iconfont authentication fa-fw"></i>Authentication</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-virtual-account">
+
+    <a href="/api/va/" rel="section"><i class="fa iconfont va fa-fw"></i>Virtual Account</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-transfer">
+
+    <a href="/api/transfer/" rel="section"><i class="fa iconfont transfer fa-fw"></i>Transfer</a>
+
+  </li>
+
+
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+                
+
+                
+
+                    
+                    <ul class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-internal">
+
+    <a href="/api/transfer/internal_transfer.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Internal</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-external">
+
+    <a href="/api/transfer/external_transfer.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-rtgs">
+
+    <a href="/api/transfer/rtgs.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>RTGS</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-llg">
+
+    <a href="/api/transfer/llg.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>LLG</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+        
+      
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Internal Transfer
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/api/">API</a></li>
+            <li><a href="/api/transfer/">TRANSFER</a></li>
+            <li>INTERNAL_TRANSFER</li>
+          
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>This endpoint is used to make transfer between two accounts in same bank.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Max Char</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">String</td>
+<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/api/">API</a></li>
+            <li><a href="/api/transfer/">TRANSFER</a></li>
+            <li>INTERNAL_TRANSFER</li>
+          
+  </ul>
+
+    
+    
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Magi</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>
