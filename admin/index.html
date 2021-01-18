@@ -23,20 +23,22 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;oauth&#x2F;token Request Header">
+<meta name="description" content="（编辑版）创建管理员 登陆管理员页面    输入管理员基本信息   创建商户查看交易信息">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Token">
-<meta property="og:url" content="http://example.com/api/authentication/token.html">
+<meta property="og:title" content="Administrator Document">
+<meta property="og:url" content="http://example.com/admin/index.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="This endpoint is used to generate token. This token is required for making an API call. Put this token in Authorization header. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;oauth&#x2F;token Request Header">
+<meta property="og:description" content="（编辑版）创建管理员 登陆管理员页面    输入管理员基本信息   创建商户查看交易信息">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/maijijun/picStore@typora/img/20201224151609.png">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-24T06:26:42.261Z">
+<meta property="article:modified_time" content="2020-12-24T08:22:25.762Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/maijijun/picStore@typora/img/20201224151609.png">
 
 
-<link rel="canonical" href="http://example.com/api/authentication/token">
+<link rel="canonical" href="http://example.com/admin/">
 
 
 <script class="page-configurations">
@@ -48,7 +50,7 @@
     lang   : 'en'
   };
 </script><meta http-equiv="Cache-Control" content="no-cache" />
-<title>Token | AFT
+<title>Administrator Document | AFT
 </title>
   
 
@@ -207,7 +209,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-Request"><span class="nav-number">1.</span> <span class="nav-text">HTTP Request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Header"><span class="nav-number">2.</span> <span class="nav-text">Request Header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Body"><span class="nav-number">3.</span> <span class="nav-text">Request Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Sample"><span class="nav-number">4.</span> <span class="nav-text">Request Sample</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Sample"><span class="nav-number">5.</span> <span class="nav-text">Response Sample</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E7%BC%96%E8%BE%91%E7%89%88%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">（编辑版）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%AE%A1%E7%90%86%E5%91%98"><span class="nav-number">2.</span> <span class="nav-text">创建管理员</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%95%86%E6%88%B7"><span class="nav-number">3.</span> <span class="nav-text">创建商户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E4%BA%A4%E6%98%93%E4%BF%A1%E6%81%AF"><span class="nav-number">4.</span> <span class="nav-text">查看交易信息</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -253,91 +255,6 @@
   
 
       
-
-        
-        <ul class="sub-menu menu">
-          
-            
-          
-          
-            
-                
-  <li class="menu-item menu-item-authentication">
-
-    <a href="/api/authentication/" rel="section"><i class="fa iconfont authentication fa-fw"></i>Authentication</a>
-
-  </li>
-
-
-          
-            
-                
-  <li class="menu-item menu-item-virtual-account">
-
-    <a href="/api/va/" rel="section"><i class="fa iconfont va fa-fw"></i>Virtual Account</a>
-
-  </li>
-
-
-          
-            
-                
-  <li class="menu-item menu-item-transfer">
-
-    <a href="/api/transfer/" rel="section"><i class="fa iconfont transfer fa-fw"></i>Transfer</a>
-
-  </li>
-
-
-          
-            
-                
-  <li class="menu-item menu-item-appendix">
-
-    <a href="/api/appendix/" rel="section"><i class="fa iconfont appendix fa-fw"></i>Appendix</a>
-
-  </li>
-
-
-        </ul>
-        
-
-        
-
-                
-
-                    
-                    <ul class="sub-menu menu">
-                      
-                        
-  <li class="menu-item menu-item-token">
-
-    <a href="/api/authentication/token.html" rel="section"><i class="fa iconfont authentication fa-fw"></i>Token</a>
-
-  </li>
-
-
-                        
-  <li class="menu-item menu-item-signature">
-
-    <a href="/api/authentication/signature.html" rel="section"><i class="fa iconfont authentication fa-fw"></i>Signature</a>
-
-  </li>
-
-
-                    </ul>
-                    
-                
-
-                
-                
-
-                
-                
-
-                
-                
-        
       
   
 
@@ -347,16 +264,10 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Token
+<h1 class="post-title" itemprop="name headline">Administrator Document
 </h1>
 
 <div class="post-meta-container">
-  <ul class="breadcrumb">
-            <li><a href="/api/">API</a></li>
-            <li><a href="/api/authentication/">AUTHENTICATION</a></li>
-            <li>TOKEN</li>
-          
-  </ul>
 </div>
 
 </header>
@@ -364,61 +275,20 @@
       
       
       <div class="post-body">
-          <p>This endpoint is used to generate <strong><code>token</code></strong>. This token is required for making an API call. Put this token in <strong>Authorization</strong> header.</p>
-<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>dev.afinpay.co.id<span class="regexp">/oauth/</span>token</span><br></pre></td></tr></table></figure>
-<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
-<thead>
-<tr>
-<th align="center">Key</th>
-<th align="center">Value</th>
-<th align="center">Mandatory</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Content-Type</td>
-<td align="center">application/x-www-form-urlencoded</td>
-<td align="center">Yes</td>
-</tr>
-<tr>
-<td align="center">Authorization</td>
-<td align="center">Basic Base64(client_id:client_secret)</td>
-<td align="center">Yes</td>
-</tr>
-</tbody></table>
-<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
-<thead>
-<tr>
-<th align="center">Field</th>
-<th align="center">Data Type</th>
-<th align="center">Mandatory</th>
-<th align="center">Value</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">grant_type</td>
-<td align="center">string</td>
-<td align="center">Yes</td>
-<td align="center">client_credentials</td>
-</tr>
-</tbody></table>
-<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/oauth/token</span> HTTP/1.1</span><br><span class="line"><span class="attribute">Host</span>: dev.afinpay.co.id</span><br><span class="line"><span class="attribute">Authorization</span>: Basic Base64(client_id:client_secret)</span><br><span class="line"><span class="attribute">Content-Type</span>: application/x-www-form-urlencoded</span><br><span class="line">grant_type=client_credentials</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">&quot;access_token&quot;</span>:<span class="string">&quot;2YotnFZFEjr1zCsicMWpAA&quot;</span>,</span><br><span class="line"><span class="attr">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,</span><br><span class="line"><span class="attr">&quot;expires_in&quot;</span>:<span class="number">3600</span>,</span><br><span class="line"><span class="attr">&quot;scope&quot;</span>:<span class="string">&quot;app&quot;</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
+          <h2 id="（编辑版）"><a href="#（编辑版）" class="headerlink" title="（编辑版）"></a><center>（编辑版）</center></h2><h2 id="创建管理员"><a href="#创建管理员" class="headerlink" title="创建管理员"></a>创建管理员</h2><ol>
+<li><p>登陆管理员页面</p>
+<img src="https://cdn.jsdelivr.net/gh/maijijun/picStore@typora/img/20201224151609.png" alt="image-20201224151606407" style="zoom: 67%;" />
+</li>
+<li></li>
+<li><p>输入管理员基本信息</p>
+</li>
+</ol>
+<h2 id="创建商户"><a href="#创建商户" class="headerlink" title="创建商户"></a>创建商户</h2><h2 id="查看交易信息"><a href="#查看交易信息" class="headerlink" title="查看交易信息"></a>查看交易信息</h2>
       </div>
       
       
       
     </div>
-  <ul class="breadcrumb">
-            <li><a href="/api/">API</a></li>
-            <li><a href="/api/authentication/">AUTHENTICATION</a></li>
-            <li>TOKEN</li>
-          
-  </ul>
 
     
     

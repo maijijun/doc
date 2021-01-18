@@ -23,20 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="This endpoint is used to make transfer between two accounts in same bank. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;transfer&#x2F;internal Request Header   Key Value Mandatory    Authorization Bearer {ac">
+<meta name="description" content="This endpoint is used to create new virtual account. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;va&#x2F;create&#x2F;close Request Header   Key Value Mandatory    Authorization Bearer {access_token} Yes   Conte">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Internal Transfer">
-<meta property="og:url" content="http://example.com/api/transfer/internal_transfer.html">
+<meta property="og:title" content="Create Close VA">
+<meta property="og:url" content="http://example.com/api/va/create_va_close.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="This endpoint is used to make transfer between two accounts in same bank. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;transfer&#x2F;internal Request Header   Key Value Mandatory    Authorization Bearer {ac">
+<meta property="og:description" content="This endpoint is used to create new virtual account. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;va&#x2F;create&#x2F;close Request Header   Key Value Mandatory    Authorization Bearer {access_token} Yes   Conte">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2021-01-18T06:41:27.889Z">
+<meta property="article:modified_time" content="2021-01-18T06:10:11.531Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/api/transfer/internal_transfer">
+<link rel="canonical" href="http://example.com/api/va/create_va_close">
 
 
 <script class="page-configurations">
@@ -48,7 +48,7 @@
     lang   : 'en'
   };
 </script><meta http-equiv="Cache-Control" content="no-cache" />
-<title>Internal Transfer | AFT
+<title>Create Close VA | AFT
 </title>
   
 
@@ -207,7 +207,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-Request"><span class="nav-number">1.</span> <span class="nav-text">HTTP Request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Header"><span class="nav-number">2.</span> <span class="nav-text">Request Header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Body"><span class="nav-number">3.</span> <span class="nav-text">Request Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Sample"><span class="nav-number">4.</span> <span class="nav-text">Request Sample</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Body"><span class="nav-number">5.</span> <span class="nav-text">Response Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Simple"><span class="nav-number">6.</span> <span class="nav-text">Response Simple</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-Simple"><span class="nav-number">7.</span> <span class="nav-text">Error Simple</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-Request"><span class="nav-number">1.</span> <span class="nav-text">HTTP Request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Header"><span class="nav-number">2.</span> <span class="nav-text">Request Header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Body"><span class="nav-number">3.</span> <span class="nav-text">Request Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-Sample"><span class="nav-number">4.</span> <span class="nav-text">Request Sample</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Body"><span class="nav-number">5.</span> <span class="nav-text">Response Body</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-Sample"><span class="nav-number">6.</span> <span class="nav-text">Response Sample</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-Sample"><span class="nav-number">7.</span> <span class="nav-text">Error Sample</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -308,71 +308,47 @@
                 
 
                 
-                
-
-                
 
                     
                     <ul class="sub-menu menu">
                       
                         
-  <li class="menu-item menu-item-internal">
+  <li class="menu-item menu-item-create-close">
 
-    <a href="/api/transfer/internal_transfer.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Internal</a>
-
-  </li>
-
-
-                        
-  <li class="menu-item menu-item-internal-inquiry">
-
-    <a href="/api/transfer/internal_inquiry.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Internal Inquiry</a>
+    <a href="/api/va/create_va_close.html" rel="section"><i class="fa iconfont va fa-fw"></i>Create Close</a>
 
   </li>
 
 
                         
-  <li class="menu-item menu-item-external">
+  <li class="menu-item menu-item-create-open">
 
-    <a href="/api/transfer/external_transfer.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External</a>
-
-  </li>
-
-
-                        
-  <li class="menu-item menu-item-external-inquiry">
-
-    <a href="/api/transfer/external_inquiry.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External Inquiry</a>
+    <a href="/api/va/create_va_open.html" rel="section"><i class="fa iconfont va fa-fw"></i>Create Open</a>
 
   </li>
 
 
                         
-  <li class="menu-item menu-item-rtgs">
+  <li class="menu-item menu-item-inquiry">
 
-    <a href="/api/transfer/rtgs.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>RTGS</a>
-
-  </li>
-
-
-                        
-  <li class="menu-item menu-item-llg">
-
-    <a href="/api/transfer/llg.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>LLG</a>
+    <a href="/api/va/inquiry_va.html" rel="section"><i class="fa iconfont va fa-fw"></i>Inquiry</a>
 
   </li>
 
 
                         
-  <li class="menu-item menu-item-balance">
+  <li class="menu-item menu-item-status">
 
-    <a href="/api/transfer/balance.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Balance</a>
+    <a href="/api/va/get_va_status.html" rel="section"><i class="fa iconfont va fa-fw"></i>Status</a>
 
   </li>
 
 
                     </ul>
                     
+                
+
+                
                 
 
                 
@@ -387,14 +363,14 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Internal Transfer
+<h1 class="post-title" itemprop="name headline">Create Close VA
 </h1>
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
             <li><a href="/api/">API</a></li>
-            <li><a href="/api/transfer/">TRANSFER</a></li>
-            <li>INTERNAL_TRANSFER</li>
+            <li><a href="/api/va/">VA</a></li>
+            <li>CREATE_VA_CLOSE</li>
           
   </ul>
 </div>
@@ -404,8 +380,8 @@
       
       
       <div class="post-body">
-          <p>This endpoint is used to make transfer between two accounts in same bank.</p>
-<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https://dev.afinpay.co.id/transfer/internal</span><br></pre></td></tr></table></figure>
+          <p>This endpoint is used to create new virtual account.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https://dev.afinpay.co.id/va/create/close</span><br></pre></td></tr></table></figure>
 <h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
 <thead>
 <tr>
@@ -456,10 +432,52 @@
 <td align="center">Merchant ID</td>
 </tr>
 <tr>
+<td align="center">amount</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">amount</td>
+</tr>
+<tr>
+<td align="center">billingType</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">virtual account type, “c”, <strong><a href="../appendix/va_type.html">Detail to &gt;</a></strong></td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Merchant Order No.</td>
+</tr>
+<tr>
+<td align="center">customerName</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Customer Name</td>
+</tr>
+<tr>
+<td align="center">customerEmail</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Customer Email</td>
+</tr>
+<tr>
+<td align="center">customerPhone</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Customer Phone</td>
+</tr>
+<tr>
+<td align="center">datetimeExpired</td>
+<td align="center">Date</td>
+<td align="center">No</td>
+<td align="center">Datetime Expired: yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
 <td align="center">version</td>
 <td align="center">String</td>
 <td align="center">No</td>
-<td align="center">Version</td>
+<td align="center">API Version(default: 1.0.0)</td>
 </tr>
 <tr>
 <td align="center">bankCode</td>
@@ -468,73 +486,13 @@
 <td align="center">Channel/Bank Code, <strong><a href="../appendix/bank_code.html">Details to &gt;</a></strong></td>
 </tr>
 <tr>
-<td align="center">creditAccountNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Credit Account No.</td>
-</tr>
-<tr>
-<td align="center">debitAccountNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Debit Account No.</td>
-</tr>
-<tr>
-<td align="center">valueCurrency</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Currency: IDR</td>
-</tr>
-<tr>
-<td align="center">beneficiaryEmailAddress</td>
-<td align="center">String</td>
-<td align="center">No</td>
-<td align="center">Beneficiary Email Address</td>
-</tr>
-<tr>
-<td align="center">beneficiaryAddress1</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Beneficiary Address 1</td>
-</tr>
-<tr>
-<td align="center">beneficiaryAddress2</td>
-<td align="center">String</td>
-<td align="center">No</td>
-<td align="center">Beneficiary Address 2</td>
-</tr>
-<tr>
-<td align="center">beneficiaryName</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Beneficiary Name</td>
-</tr>
-<tr>
-<td align="center">valueDate</td>
-<td align="center">Date</td>
-<td align="center">Yes</td>
-<td align="center">yyyy-MM-dd HH:mm:ss</td>
-</tr>
-<tr>
-<td align="center">valueAmount</td>
-<td align="center">Number</td>
-<td align="center">Yes</td>
-<td align="center">payment Amount</td>
-</tr>
-<tr>
-<td align="center">outOrderNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Out Order No.</td>
-</tr>
-<tr>
-<td align="center">remark</td>
+<td align="center">description</td>
 <td align="center">String</td>
 <td align="center">No</td>
 <td align="center">description</td>
 </tr>
 </tbody></table>
-<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;bankCode&quot;</span>: <span class="string">&quot;009&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress1&quot;</span>: <span class="string">&quot;address 1&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;remark&quot;</span>: <span class="string">&quot;internal transfer test&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueDate&quot;</span>: <span class="string">&quot;2021-01-18 14:18:49&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress2&quot;</span>: <span class="string">&quot;address 2&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Internal-12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">10000</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryName&quot;</span>: <span class="string">&quot;Magi&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;amount&quot;</span>: <span class="number">100000</span>, </span><br><span class="line">    <span class="attr">&quot;bankCode&quot;</span>: <span class="string">&quot;016&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;customerPhone&quot;</span>: <span class="string">&quot;081298247395&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;billingType&quot;</span>: <span class="string">&quot;c&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;customerEmail&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;datetimeExpired&quot;</span>: <span class="string">&quot;2021-01-20 10:51:13&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;Create Close VA Test&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Test-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;customerName&quot;</span>: <span class="string">&quot;Magi&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
 <thead>
 <tr>
@@ -554,7 +512,7 @@
 <td align="center">version</td>
 <td align="center">String</td>
 <td align="center">Yes</td>
-<td align="center">Version</td>
+<td align="center">API Version</td>
 </tr>
 <tr>
 <td align="center">nonceStr</td>
@@ -578,7 +536,7 @@
 <td align="center">orderNo</td>
 <td align="center">String</td>
 <td align="center">Yes</td>
-<td align="center">Order No.</td>
+<td align="center">AFT order No.</td>
 </tr>
 <tr>
 <td align="center">outOrderNo</td>
@@ -587,44 +545,26 @@
 <td align="center">Out Order No.</td>
 </tr>
 <tr>
-<td align="center">debitAccountNo</td>
+<td align="center">virtualAccount</td>
 <td align="center">String</td>
 <td align="center">Yes</td>
-<td align="center">Debit Account No.</td>
+<td align="center">Virtual Account</td>
 </tr>
 <tr>
-<td align="center">creditAccountNo</td>
+<td align="center">virtualAccountType</td>
 <td align="center">String</td>
 <td align="center">Yes</td>
-<td align="center">Credit Account No.</td>
+<td align="center">Virtual Account Type</td>
 </tr>
 <tr>
-<td align="center">valueAmount</td>
+<td align="center">amount</td>
 <td align="center">String</td>
 <td align="center">Yes</td>
-<td align="center">Payment Amount.</td>
-</tr>
-<tr>
-<td align="center">valueCurrency</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Currency: IDR</td>
-</tr>
-<tr>
-<td align="center">beneficiaryEmailAddress</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Beneficiary Email Address</td>
-</tr>
-<tr>
-<td align="center">status</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Status</td>
+<td align="center">amount</td>
 </tr>
 </tbody></table>
-<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;nonceStr&quot;</span>: <span class="string">&quot;7b7a6fa164494137a835731f2b5b7b84&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resCode&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resMsg&quot;</span>: <span class="string">&quot;Success&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;orderNo&quot;</span>: <span class="string">&quot;IMAY-20210118105132c5487&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Internal-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">100000</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;status&quot;</span>: <span class="string">&quot;2&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;nonceStr&quot;</span>: <span class="string">&quot;7b7a6fa164494137a835731f2b5b7b84&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resCode&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resMsg&quot;</span>: <span class="string">&quot;Success&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;orderNo&quot;</span>: <span class="string">&quot;CMAY-20210118105132c5487&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Test-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;virtualAccount&quot;</span>: <span class="string">&quot;7898616109382926&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;amount&quot;</span>: <span class="string">&quot;100000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;virtualAccountType&quot;</span>: <span class="string">&quot;c&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Error-Sample"><a href="#Error-Sample" class="headerlink" title="Error Sample"></a>Error Sample</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-</span><br></pre></td></tr></table></figure>
 
       </div>
       
@@ -633,8 +573,8 @@
     </div>
   <ul class="breadcrumb">
             <li><a href="/api/">API</a></li>
-            <li><a href="/api/transfer/">TRANSFER</a></li>
-            <li>INTERNAL_TRANSFER</li>
+            <li><a href="/api/va/">VA</a></li>
+            <li>CREATE_VA_CLOSE</li>
           
   </ul>
 

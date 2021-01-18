@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="Document Version   Date Doc Version Description PIC    2020&#x2F;12&#x2F;21 1.0.0  Wu   APIOverview of AFT API:    Method Endpoint Usage    POST &#x2F;bill&#x2F;create create a new virtual Account.   POST &#x2F;bill&#x2F;query inq">
+<meta name="description" content="Document Version   Date Doc Version Description Author    2020&#x2F;12&#x2F;21 1.0.0 Create this document Wu   APIOverview of AFT API:    Method Endpoint Usage    POST &#x2F;oauth&#x2F;token generate  access token.   POS">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Document">
+<meta property="og:title" content="API Document">
 <meta property="og:url" content="http://example.com/api/index.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="Document Version   Date Doc Version Description PIC    2020&#x2F;12&#x2F;21 1.0.0  Wu   APIOverview of AFT API:    Method Endpoint Usage    POST &#x2F;bill&#x2F;create create a new virtual Account.   POST &#x2F;bill&#x2F;query inq">
+<meta property="og:description" content="Document Version   Date Doc Version Description Author    2020&#x2F;12&#x2F;21 1.0.0 Create this document Wu   APIOverview of AFT API:    Method Endpoint Usage    POST &#x2F;oauth&#x2F;token generate  access token.   POS">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-22T09:28:37.043Z">
+<meta property="article:modified_time" content="2020-12-24T07:58:21.124Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
@@ -48,7 +48,7 @@
     lang   : 'en'
   };
 </script><meta http-equiv="Cache-Control" content="no-cache" />
-<title>Document | AFT
+<title>API Document | AFT
 </title>
   
 
@@ -141,6 +141,11 @@
 
 
       
+        <li class="menu-item menu-item-administrator">
+
+    <a href="/admin/" rel="section"><i class="fa iconfont user-admin fa-fw"></i>Administrator</a>
+
+  </li>
         <li class="menu-item menu-item-merchant">
 
     <a href="/mch/" rel="section"><i class="fa fa-user fa-fw"></i>Merchant</a>
@@ -320,7 +325,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Document
+<h1 class="post-title" itemprop="name headline">API Document
 </h1>
 
 <div class="post-meta-container">
@@ -337,13 +342,13 @@
 <th align="center">Date</th>
 <th align="center">Doc Version</th>
 <th align="center">Description</th>
-<th align="center">PIC</th>
+<th align="center">Author</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">2020/12/21</td>
 <td align="center">1.0.0</td>
-<td align="center"></td>
+<td align="center">Create this document</td>
 <td align="center">Wu</td>
 </tr>
 </tbody></table>
@@ -357,6 +362,16 @@
 </tr>
 </thead>
 <tbody><tr>
+<td align="center">POST</td>
+<td align="center">/oauth/token</td>
+<td align="center">generate  access token.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
 <td align="center">POST</td>
 <td align="center">/bill/create</td>
 <td align="center">create a new virtual Account.</td>
@@ -461,7 +476,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

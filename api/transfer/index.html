@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="Internal Transfer &gt;&gt;External Transfer &gt;&gt;RTGS Transfer &gt;&gt;LLG Transfer &gt;&gt;">
+<meta name="description" content="Internal Transfer &gt;&gt;Internal Inquiry &gt;&gt;External Transfer &gt;&gt;External Inquiry &gt;&gt;RTGS Transfer &gt;&gt;LLG Transfer &gt;&gt;Balance&gt;&gt;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AFT">
 <meta property="og:url" content="http://example.com/api/transfer/index.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="Internal Transfer &gt;&gt;External Transfer &gt;&gt;RTGS Transfer &gt;&gt;LLG Transfer &gt;&gt;">
+<meta property="og:description" content="Internal Transfer &gt;&gt;Internal Inquiry &gt;&gt;External Transfer &gt;&gt;External Inquiry &gt;&gt;RTGS Transfer &gt;&gt;LLG Transfer &gt;&gt;Balance&gt;&gt;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-22T07:55:44.010Z">
+<meta property="article:modified_time" content="2021-01-18T07:00:33.301Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
@@ -141,6 +141,11 @@
 
 
       
+        <li class="menu-item menu-item-administrator">
+
+    <a href="/admin/" rel="section"><i class="fa iconfont user-admin fa-fw"></i>Administrator</a>
+
+  </li>
         <li class="menu-item menu-item-merchant">
 
     <a href="/mch/" rel="section"><i class="fa fa-user fa-fw"></i>Merchant</a>
@@ -202,7 +207,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Internal-Transfer-gt-gt"><span class="nav-number">1.</span> <span class="nav-text">Internal Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#External-Transfer-gt-gt"><span class="nav-number">2.</span> <span class="nav-text">External Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RTGS-Transfer-gt-gt"><span class="nav-number">3.</span> <span class="nav-text">RTGS Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LLG-Transfer-gt-gt"><span class="nav-number">4.</span> <span class="nav-text">LLG Transfer &gt;&gt;</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Internal-Transfer-gt-gt"><span class="nav-number">1.</span> <span class="nav-text">Internal Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Internal-Inquiry-gt-gt"><span class="nav-number">2.</span> <span class="nav-text">Internal Inquiry &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#External-Transfer-gt-gt"><span class="nav-number">3.</span> <span class="nav-text">External Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#External-Inquiry-gt-gt"><span class="nav-number">4.</span> <span class="nav-text">External Inquiry &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RTGS-Transfer-gt-gt"><span class="nav-number">5.</span> <span class="nav-text">RTGS Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LLG-Transfer-gt-gt"><span class="nav-number">6.</span> <span class="nav-text">LLG Transfer &gt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Balance-gt-gt"><span class="nav-number">7.</span> <span class="nav-text">Balance&gt;&gt;</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -319,9 +324,25 @@
 
 
                         
+  <li class="menu-item menu-item-internal-inquiry">
+
+    <a href="/api/transfer/internal_inquiry.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Internal Inquiry</a>
+
+  </li>
+
+
+                        
   <li class="menu-item menu-item-external">
 
     <a href="/api/transfer/external_transfer.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-external-inquiry">
+
+    <a href="/api/transfer/external_inquiry.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External Inquiry</a>
 
   </li>
 
@@ -338,6 +359,14 @@
   <li class="menu-item menu-item-llg">
 
     <a href="/api/transfer/llg.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>LLG</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-balance">
+
+    <a href="/api/transfer/balance.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Balance</a>
 
   </li>
 
@@ -374,7 +403,7 @@
       
       
       <div class="post-body">
-          <h3 id="Internal-Transfer-gt-gt"><a href="#Internal-Transfer-gt-gt" class="headerlink" title="Internal Transfer &gt;&gt;"></a><a href="./internal_transfer.html">Internal Transfer &gt;&gt;</a></h3><h3 id="External-Transfer-gt-gt"><a href="#External-Transfer-gt-gt" class="headerlink" title="External Transfer &gt;&gt;"></a><a href="./external_transfer.html">External Transfer &gt;&gt;</a></h3><h3 id="RTGS-Transfer-gt-gt"><a href="#RTGS-Transfer-gt-gt" class="headerlink" title="RTGS Transfer &gt;&gt;"></a><a href="./rtgs.html">RTGS Transfer &gt;&gt;</a></h3><h3 id="LLG-Transfer-gt-gt"><a href="#LLG-Transfer-gt-gt" class="headerlink" title="LLG Transfer &gt;&gt;"></a><a href="./llg.html">LLG Transfer &gt;&gt;</a></h3>
+          <h3 id="Internal-Transfer-gt-gt"><a href="#Internal-Transfer-gt-gt" class="headerlink" title="Internal Transfer &gt;&gt;"></a><a href="./internal_transfer.html">Internal Transfer &gt;&gt;</a></h3><h3 id="Internal-Inquiry-gt-gt"><a href="#Internal-Inquiry-gt-gt" class="headerlink" title="Internal Inquiry &gt;&gt;"></a><a href="./internal_inquiry.html">Internal Inquiry &gt;&gt;</a></h3><h3 id="External-Transfer-gt-gt"><a href="#External-Transfer-gt-gt" class="headerlink" title="External Transfer &gt;&gt;"></a><a href="./external_transfer.html">External Transfer &gt;&gt;</a></h3><h3 id="External-Inquiry-gt-gt"><a href="#External-Inquiry-gt-gt" class="headerlink" title="External Inquiry &gt;&gt;"></a><a href="./external_inquiry.html">External Inquiry &gt;&gt;</a></h3><h3 id="RTGS-Transfer-gt-gt"><a href="#RTGS-Transfer-gt-gt" class="headerlink" title="RTGS Transfer &gt;&gt;"></a><a href="./rtgs.html">RTGS Transfer &gt;&gt;</a></h3><h3 id="LLG-Transfer-gt-gt"><a href="#LLG-Transfer-gt-gt" class="headerlink" title="LLG Transfer &gt;&gt;"></a><a href="./llg.html">LLG Transfer &gt;&gt;</a></h3><h3 id="Balance-gt-gt"><a href="#Balance-gt-gt" class="headerlink" title="Balance&gt;&gt;"></a><a href="./balance.html">Balance&gt;&gt;</a></h3>
       </div>
       
       
@@ -421,7 +450,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="Response Code Desc     0 Success 成功   1000     2000 link down 系统错误   2010 Invalid Parameter 入参错误，详情   2001 sign fail 签名校验失败   2002     2003 Bank&#x2F;Channel Not Found 系统不支持该银行   3000 Merchant setting n">
+<meta name="description" content="Response Code Desc     0 Success 成功   1000 Normal Error    1111 Unknown Error    2000 link down 系统错误   2001 Check signature fail 签名校验失败   2003 Bank&#x2F;Channel Not Found 系统不支持该银行   2004 Provider System">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Response Code">
 <meta property="og:url" content="http://example.com/api/appendix/resp_code.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="Response Code Desc     0 Success 成功   1000     2000 link down 系统错误   2010 Invalid Parameter 入参错误，详情   2001 sign fail 签名校验失败   2002     2003 Bank&#x2F;Channel Not Found 系统不支持该银行   3000 Merchant setting n">
+<meta property="og:description" content="Response Code Desc     0 Success 成功   1000 Normal Error    1111 Unknown Error    2000 link down 系统错误   2001 Check signature fail 签名校验失败   2003 Bank&#x2F;Channel Not Found 系统不支持该银行   2004 Provider System">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-22T04:00:17.000Z">
-<meta property="article:modified_time" content="2020-12-22T04:02:24.873Z">
+<meta property="article:modified_time" content="2021-01-18T07:21:34.503Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
@@ -141,6 +141,11 @@
 
 
       
+        <li class="menu-item menu-item-administrator">
+
+    <a href="/admin/" rel="section"><i class="fa iconfont user-admin fa-fw"></i>Administrator</a>
+
+  </li>
         <li class="menu-item menu-item-merchant">
 
     <a href="/mch/" rel="section"><i class="fa fa-user fa-fw"></i>Merchant</a>
@@ -373,7 +378,12 @@
 </tr>
 <tr>
 <td align="center">1000</td>
+<td align="center">Normal Error</td>
 <td align="center"></td>
+</tr>
+<tr>
+<td align="center">1111</td>
+<td align="center">Unknown Error</td>
 <td align="center"></td>
 </tr>
 <tr>
@@ -382,24 +392,79 @@
 <td align="center">系统错误</td>
 </tr>
 <tr>
-<td align="center">2010</td>
-<td align="center">Invalid Parameter</td>
-<td align="center">入参错误，详情</td>
-</tr>
-<tr>
 <td align="center">2001</td>
-<td align="center">sign fail</td>
+<td align="center">Check signature fail</td>
 <td align="center">签名校验失败</td>
-</tr>
-<tr>
-<td align="center">2002</td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td align="center">2003</td>
 <td align="center">Bank/Channel Not Found</td>
 <td align="center">系统不支持该银行</td>
+</tr>
+<tr>
+<td align="center">2004</td>
+<td align="center">Provider System Link Down: DUBBO</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2010</td>
+<td align="center">Invalid Parameter</td>
+<td align="center">入参错误，详情</td>
+</tr>
+<tr>
+<td align="center">2011</td>
+<td align="center">Param Format Error</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2012</td>
+<td align="center">Bank Response Error</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2013</td>
+<td align="center">Json Format Error</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2100</td>
+<td align="center">Invalid Ip Address</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2101</td>
+<td align="center">PublicKey Invalid</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2102</td>
+<td align="center">PrivateKey Not Found</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2103</td>
+<td align="center">Timestamp Format Error</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2104</td>
+<td align="center">Access Denied</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2200</td>
+<td align="center">Order is not exist</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2201</td>
+<td align="center">Inquiry Balance Error</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2202</td>
+<td align="center">This Channel Not Exist</td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">3000</td>
@@ -512,7 +577,7 @@
 <td align="center">可疑</td>
 </tr>
 <tr>
-<td align="center">3310</td>
+<td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -645,7 +710,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

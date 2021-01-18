@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="This endpoint is used to make transfer using RTGS method. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id Request Header   Key Value Mandatory    Content-Type application&#x2F;json Yes   Request Body   Field">
+<meta name="description" content="This endpoint is used to make transfer using RTGS method. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;transfer&#x2F;rtgs Request Header   Key Value Mandatory    Authorization Bearer {access_token} Yes   C">
 <meta property="og:type" content="website">
 <meta property="og:title" content="RTGS Transfer">
 <meta property="og:url" content="http://example.com/api/transfer/rtgs.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="This endpoint is used to make transfer using RTGS method. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id Request Header   Key Value Mandatory    Content-Type application&#x2F;json Yes   Request Body   Field">
+<meta property="og:description" content="This endpoint is used to make transfer using RTGS method. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;transfer&#x2F;rtgs Request Header   Key Value Mandatory    Authorization Bearer {access_token} Yes   C">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-22T06:50:45.400Z">
+<meta property="article:modified_time" content="2021-01-18T06:54:24.667Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
@@ -141,6 +141,11 @@
 
 
       
+        <li class="menu-item menu-item-administrator">
+
+    <a href="/admin/" rel="section"><i class="fa iconfont user-admin fa-fw"></i>Administrator</a>
+
+  </li>
         <li class="menu-item menu-item-merchant">
 
     <a href="/mch/" rel="section"><i class="fa fa-user fa-fw"></i>Merchant</a>
@@ -319,9 +324,25 @@
 
 
                         
+  <li class="menu-item menu-item-internal-inquiry">
+
+    <a href="/api/transfer/internal_inquiry.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Internal Inquiry</a>
+
+  </li>
+
+
+                        
   <li class="menu-item menu-item-external">
 
     <a href="/api/transfer/external_transfer.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-external-inquiry">
+
+    <a href="/api/transfer/external_inquiry.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>External Inquiry</a>
 
   </li>
 
@@ -338,6 +359,14 @@
   <li class="menu-item menu-item-llg">
 
     <a href="/api/transfer/llg.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>LLG</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-balance">
+
+    <a href="/api/transfer/balance.html" rel="section"><i class="fa iconfont transfer fa-fw"></i>Balance</a>
 
   </li>
 
@@ -376,7 +405,7 @@
       
       <div class="post-body">
           <p> This endpoint is used to make transfer using RTGS method.</p>
-<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">POST</span> <span class="selector-tag">https</span>://<span class="selector-tag">dev</span><span class="selector-class">.afinpay</span><span class="selector-class">.co</span><span class="selector-class">.id</span></span><br></pre></td></tr></table></figure>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https://dev.afinpay.co.id/transfer/rtgs</span><br></pre></td></tr></table></figure>
 <h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
 <thead>
 <tr>
@@ -386,8 +415,28 @@
 </tr>
 </thead>
 <tbody><tr>
+<td align="center">Authorization</td>
+<td align="center">Bearer {access_token}</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
 <td align="center">Content-Type</td>
 <td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Key</td>
+<td align="center">{api_key}</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Timestamp</td>
+<td align="center">yyyy-MM-ddTHH:mm:ss.SSSZ</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Signature</td>
+<td align="center">refer to <strong><a href="../authentication/signature.html">signature</a></strong></td>
 <td align="center">Yes</td>
 </tr>
 </tbody></table>
@@ -396,69 +445,239 @@
 <tr>
 <th align="center">Field</th>
 <th align="center">Data Type</th>
-<th align="center">Max Char</th>
 <th align="center">Mandatory</th>
 <th align="center">Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center"></td>
+<td align="center">appId</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Merchant ID</td>
 </tr>
 <tr>
-<td align="center"></td>
+<td align="center">version</td>
 <td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">No</td>
+<td align="center">Version</td>
 </tr>
 <tr>
-<td align="center"></td>
+<td align="center">bankCode</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Channel/Bank Code, <strong><a href="../appendix/bank_code.html">Details to &gt;</a></strong></td>
+</tr>
+<tr>
+<td align="center">destinationBankCode</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Destination Bank Code</td>
+</tr>
+<tr>
+<td align="center">creditAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Credit Account No.</td>
+</tr>
+<tr>
+<td align="center">debitAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Debit Account No.</td>
+</tr>
+<tr>
+<td align="center">valueCurrency</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Currency: IDR</td>
+</tr>
+<tr>
+<td align="center">beneficiaryEmailAddress</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Beneficiary Email Address</td>
+</tr>
+<tr>
+<td align="center">beneficiaryAddress1</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Beneficiary Address 1</td>
+</tr>
+<tr>
+<td align="center">beneficiaryAddress2</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Beneficiary Address 2</td>
+</tr>
+<tr>
+<td align="center">beneficiaryName</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Beneficiary Name</td>
+</tr>
+<tr>
+<td align="center">valueDate</td>
+<td align="center">Date</td>
+<td align="center">Yes</td>
+<td align="center">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td align="center">valueAmount</td>
+<td align="center">Number</td>
+<td align="center">Yes</td>
+<td align="center">payment Amount</td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Out Order No.</td>
+</tr>
+<tr>
+<td align="center">senderResidencyStatus</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Sender Residency Status</td>
+</tr>
+<tr>
+<td align="center">receiverResidencyStatus</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Receiver Residency Status</td>
+</tr>
+<tr>
+<td align="center">senderType</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Sender Type</td>
+</tr>
+<tr>
+<td align="center">receiverType</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Receiver Type</td>
+</tr>
+<tr>
+<td align="center">senderIdentity</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Sender Identity</td>
+</tr>
+<tr>
+<td align="center">receiverIdentity</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Receiver Identity</td>
+</tr>
+<tr>
+<td align="center">corporateType</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Corporate Type</td>
+</tr>
+<tr>
+<td align="center">receiverSwiftCode</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Receiver Swift Code</td>
+</tr>
+<tr>
+<td align="center">remark</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">description</td>
 </tr>
 </tbody></table>
-<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;senderIdentity&quot;</span>: <span class="string">&quot;123&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;bankCode&quot;</span>: <span class="string">&quot;013&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress1&quot;</span>: <span class="string">&quot;address 1&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;remark&quot;</span>: <span class="string">&quot;RTGS transfer test&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueDate&quot;</span>: <span class="string">&quot;2021-01-18 14:46:03&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress2&quot;</span>: <span class="string">&quot;address 2&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;RTGS-12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">10000</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;destinationBankCode&quot;</span>: <span class="string">&quot;009&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;receiverIdentity&quot;</span>: <span class="string">&quot;321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryName&quot;</span>: <span class="string">&quot;Magi&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;receiverType&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;receiverResidencyStatus&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;senderResidencyStatus&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;senderType&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;corporateType&quot;</span>: <span class="string">&quot;1&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
 <thead>
 <tr>
 <th align="center">Field</th>
 <th align="center">Data Type</th>
-<th align="center">Max Char</th>
 <th align="center">Mandatory</th>
 <th align="center">Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center"></td>
+<td align="center">appId</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Merchant ID</td>
 </tr>
 <tr>
-<td align="center"></td>
+<td align="center">version</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Version</td>
 </tr>
 <tr>
-<td align="center"></td>
+<td align="center">nonceStr</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Unique String</td>
+</tr>
+<tr>
+<td align="center">resCode</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Response Code</td>
+</tr>
+<tr>
+<td align="center">resMsg</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Response Message</td>
+</tr>
+<tr>
+<td align="center">orderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Order No.</td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Out Order No.</td>
+</tr>
+<tr>
+<td align="center">debitAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Debit Account No.</td>
+</tr>
+<tr>
+<td align="center">creditAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Credit Account No.</td>
+</tr>
+<tr>
+<td align="center">valueAmount</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Payment Amount.</td>
+</tr>
+<tr>
+<td align="center">valueCurrency</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Currency: IDR</td>
+</tr>
+<tr>
+<td align="center">beneficiaryEmailAddress</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Beneficiary Email Address</td>
+</tr>
+<tr>
+<td align="center">status</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Status</td>
 </tr>
 </tbody></table>
-<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;nonceStr&quot;</span>: <span class="string">&quot;7b7a6fa164494137a835731f2b5b7b84&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resCode&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resMsg&quot;</span>: <span class="string">&quot;Success&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;orderNo&quot;</span>: <span class="string">&quot;RMAY-20210118105132c5487&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;RTGS-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">100000</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;destinationBankCode&quot;</span>: <span class="string">&quot;013&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;status&quot;</span>: <span class="string">&quot;2&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 <h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
@@ -510,7 +729,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

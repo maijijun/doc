@@ -23,20 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="This endpoint is used to create new virtual account. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;bill&#x2F;create Request Header   Key Value Mandatory    Content-Type application&#x2F;json Yes   Request Body">
+<meta name="description" content="This endpoint is used to create new open virtual account. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;va&#x2F;create&#x2F;open Request Header   Key Value Mandatory    Authorization Bearer {access_token} Yes   C">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Create VA">
-<meta property="og:url" content="http://example.com/api/va/create_va.html">
+<meta property="og:title" content="Create Open VA">
+<meta property="og:url" content="http://example.com/api/va/create_va_open.html">
 <meta property="og:site_name" content="AFT">
-<meta property="og:description" content="This endpoint is used to create new virtual account. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;bill&#x2F;create Request Header   Key Value Mandatory    Content-Type application&#x2F;json Yes   Request Body">
+<meta property="og:description" content="This endpoint is used to create new open virtual account. HTTP Request1POST https:&#x2F;&#x2F;dev.afinpay.co.id&#x2F;va&#x2F;create&#x2F;open Request Header   Key Value Mandatory    Authorization Bearer {access_token} Yes   C">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-22T06:41:42.484Z">
+<meta property="article:modified_time" content="2021-01-18T06:09:24.259Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/api/va/create_va">
+<link rel="canonical" href="http://example.com/api/va/create_va_open">
 
 
 <script class="page-configurations">
@@ -48,7 +48,7 @@
     lang   : 'en'
   };
 </script><meta http-equiv="Cache-Control" content="no-cache" />
-<title>Create VA | AFT
+<title>Create Open VA | AFT
 </title>
   
 
@@ -141,6 +141,11 @@
 
 
       
+        <li class="menu-item menu-item-administrator">
+
+    <a href="/admin/" rel="section"><i class="fa iconfont user-admin fa-fw"></i>Administrator</a>
+
+  </li>
         <li class="menu-item menu-item-merchant">
 
     <a href="/mch/" rel="section"><i class="fa fa-user fa-fw"></i>Merchant</a>
@@ -308,9 +313,17 @@
                     <ul class="sub-menu menu">
                       
                         
-  <li class="menu-item menu-item-create">
+  <li class="menu-item menu-item-create-close">
 
-    <a href="/api/va/create_va.html" rel="section"><i class="fa iconfont va fa-fw"></i>Create</a>
+    <a href="/api/va/create_va_close.html" rel="section"><i class="fa iconfont va fa-fw"></i>Create Close</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-create-open">
+
+    <a href="/api/va/create_va_open.html" rel="section"><i class="fa iconfont va fa-fw"></i>Create Open</a>
 
   </li>
 
@@ -350,14 +363,14 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Create VA
+<h1 class="post-title" itemprop="name headline">Create Open VA
 </h1>
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
             <li><a href="/api/">API</a></li>
             <li><a href="/api/va/">VA</a></li>
-            <li>CREATE_VA</li>
+            <li>CREATE_VA_OPEN</li>
           
   </ul>
 </div>
@@ -367,8 +380,8 @@
       
       
       <div class="post-body">
-          <p>This endpoint is used to create new virtual account.</p>
-<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https:<span class="regexp">//</span>dev.afinpay.co.id<span class="regexp">/bill/</span>create</span><br></pre></td></tr></table></figure>
+          <p>This endpoint is used to create new open virtual account.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https://dev.afinpay.co.id/va/create/open</span><br></pre></td></tr></table></figure>
 <h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
 <thead>
 <tr>
@@ -378,8 +391,28 @@
 </tr>
 </thead>
 <tbody><tr>
+<td align="center">Authorization</td>
+<td align="center">Bearer {access_token}</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
 <td align="center">Content-Type</td>
 <td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Key</td>
+<td align="center">{api_key}</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Timestamp</td>
+<td align="center">yyyy-MM-ddTHH:mm:ss.SSSZ</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Signature</td>
+<td align="center">refer to <strong><a href="../authentication/signature.html">signature</a></strong></td>
 <td align="center">Yes</td>
 </tr>
 </tbody></table>
@@ -388,7 +421,6 @@
 <tr>
 <th align="center">Field</th>
 <th align="center">Data Type</th>
-<th align="center">Max Char</th>
 <th align="center">Mandatory</th>
 <th align="center">Description</th>
 </tr>
@@ -396,109 +428,76 @@
 <tbody><tr>
 <td align="center">appId</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
 <td align="center">Merchant ID</td>
 </tr>
 <tr>
-<td align="center">nonceStr</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">timestamp</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">sign</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
-</tr>
-<tr>
 <td align="center">amount</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">type</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">amount</td>
 </tr>
 <tr>
 <td align="center">billingType</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">virtual account type, “o”, <strong><a href="../appendix/va_type.html">Detail to &gt;</a></strong></td>
 </tr>
 <tr>
 <td align="center">outOrderNo</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Merchant Order No.</td>
 </tr>
 <tr>
 <td align="center">customerName</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Customer Name</td>
 </tr>
 <tr>
 <td align="center">customerEmail</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">No</td>
-<td align="center"></td>
+<td align="center">Customer Email</td>
 </tr>
 <tr>
 <td align="center">customerPhone</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">No</td>
-<td align="center"></td>
+<td align="center">Customer Phone</td>
 </tr>
 <tr>
 <td align="center">datetimeExpired</td>
-<td align="center">String</td>
-<td align="center"></td>
+<td align="center">Date</td>
 <td align="center">No</td>
-<td align="center"></td>
+<td align="center">Datetime Expired: yyyy-MM-dd HH:mm:ss</td>
 </tr>
 <tr>
 <td align="center">version</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">No</td>
-<td align="center">API Version</td>
+<td align="center">API Version(default: 1.0.0)</td>
 </tr>
 <tr>
 <td align="center">bankCode</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Channel/Bank Code, <strong><a href="../appendix/bank_code.html">Details to &gt;</a></strong></td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">description</td>
 </tr>
 </tbody></table>
-<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="string">&quot;11000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;FDA4EE2E4958E40832ADDB08CE944DF3D7D9DC8D4BF63CD6BEC581BB0686206C&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;type&quot;</span>:<span class="string">&quot;createbilling&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="string">&quot;20191119113337655&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;5a4099eaa1f845a794fa6de6b621301d&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerName&quot;</span>:<span class="string">&quot;qbWW99oEeE58ZV+cR7UBnA==&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerPhone&quot;</span>:<span class="string">&quot;hx7VvHO+FMAmSeAKKl6LEA==&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;billingType&quot;</span>:<span class="string">&quot;c&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;customerEmail&quot;</span>:<span class="string">&quot;e1L2bviNJ6jx\/c1AkFeCS+VVA+zJfJ5wKRAXKj9Ebq4=&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;datetimeExpired&quot;</span>:<span class="string">&quot;2019-11-20 11:33:37&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574138017733&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;bankCode&quot;</span>: <span class="string">&quot;016&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;amount&quot;</span>: <span class="number">100000</span>, </span><br><span class="line">    <span class="attr">&quot;customerPhone&quot;</span>: <span class="string">&quot;081298247395&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;billingType&quot;</span>: <span class="string">&quot;o&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;customerEmail&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;datetimeExpired&quot;</span>: <span class="string">&quot;2021-01-20 11:02:56&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;Create Open VA Test&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Test-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;customerName&quot;</span>: <span class="string">&quot;Magi&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
 <thead>
 <tr>
 <th align="center">Field</th>
 <th align="center">Data Type</th>
-<th align="center">Max Char</th>
 <th align="center">Mandatory</th>
 <th align="center">Description</th>
 </tr>
@@ -506,97 +505,66 @@
 <tbody><tr>
 <td align="center">appId</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
 <td align="center">Merchant ID</td>
 </tr>
 <tr>
 <td align="center">version</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
 <td align="center">API Version</td>
 </tr>
 <tr>
 <td align="center">nonceStr</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">timestamp</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">sign</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Unique String</td>
 </tr>
 <tr>
 <td align="center">resCode</td>
 <td align="center">String</td>
-<td align="center"></td>
 <td align="center">Yes</td>
-<td align="center"></td>
+<td align="center">Response Code</td>
 </tr>
 <tr>
 <td align="center">resMsg</td>
 <td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">resultCode</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">errorCode</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">errorMsg</td>
-<td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">Response Message</td>
 </tr>
 <tr>
 <td align="center">orderNo</td>
 <td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">AFT order No.</td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Out Order No.</td>
 </tr>
 <tr>
 <td align="center">virtualAccount</td>
 <td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">Virtual Account</td>
+</tr>
+<tr>
+<td align="center">virtualAccountType</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Virtual Account Type</td>
 </tr>
 <tr>
 <td align="center">amount</td>
 <td align="center">String</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">Yes</td>
+<td align="center">amount</td>
 </tr>
 </tbody></table>
-<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;108a753b503c4d2ebcb81ad7fe534557&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574137955272&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;F85E6A62B6DEE219AF92226D99C66650DA7CEFB13977D62BBFC10767423DFA12&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resCode&quot;</span>:<span class="string">&quot;0000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resMsg&quot;</span>:<span class="string">&quot;SUCCESS&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resultCode&quot;</span>:<span class="string">&quot;SUCCESS&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;errorCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorMsg&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;orderNo&quot;</span>:<span class="string">&quot;2019111911323523229&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;virtualAccount&quot;</span>:<span class="string">&quot;8286191119113301&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="string">&quot;11000&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Error-Sample"><a href="#Error-Sample" class="headerlink" title="Error Sample"></a>Error Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="attr">&quot;appId&quot;</span>:<span class="string">&quot;1000018&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;nonceStr&quot;</span>:<span class="string">&quot;a935824fc95f45a0af52fb58808c8850&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;timestamp&quot;</span>:<span class="string">&quot;1574135690075&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;sign&quot;</span>:<span class="string">&quot;7BC0495054F122A0634712E896ABC5AD8C5D35C623D754E3E7224C2CD66B81FE&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resCode&quot;</span>:<span class="string">&quot;1000&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resMsg&quot;</span>:<span class="string">&quot;check sign fail&quot;</span>,</span><br><span class="line">   <span class="attr">&quot;resultCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorCode&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;errorMsg&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;orderNo&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;outOrderNo&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;virtualAccount&quot;</span>:<span class="literal">null</span>,</span><br><span class="line">   <span class="attr">&quot;amount&quot;</span>:<span class="literal">null</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;nonceStr&quot;</span>: <span class="string">&quot;efb1618b50b14005ade48a690fa4bd19&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resCode&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resMsg&quot;</span>: <span class="string">&quot;Success&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;orderNo&quot;</span>: <span class="string">&quot;OMAY-20210118110302592bd&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Test-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;virtualAccount&quot;</span>: <span class="string">&quot;7898616109389826&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;amount&quot;</span>: <span class="string">&quot;100000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;virtualAccountType&quot;</span>: <span class="string">&quot;o&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Error-Sample"><a href="#Error-Sample" class="headerlink" title="Error Sample"></a>Error Sample</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-</span><br></pre></td></tr></table></figure>
 
       </div>
       
@@ -606,7 +574,7 @@
   <ul class="breadcrumb">
             <li><a href="/api/">API</a></li>
             <li><a href="/api/va/">VA</a></li>
-            <li>CREATE_VA</li>
+            <li>CREATE_VA_OPEN</li>
           
   </ul>
 
@@ -645,7 +613,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
