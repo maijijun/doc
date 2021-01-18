@@ -7,6 +7,127 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Administrator Document</title>
+    <url>/admin/index.html</url>
+    <content><![CDATA[<h2 id="（编辑版）"><a href="#（编辑版）" class="headerlink" title="（编辑版）"></a><center>（编辑版）</center></h2><h2 id="创建管理员"><a href="#创建管理员" class="headerlink" title="创建管理员"></a>创建管理员</h2><ol>
+<li><p>登陆管理员页面</p>
+<img src="https://cdn.jsdelivr.net/gh/maijijun/picStore@typora/img/20201224151609.png" alt="image-20201224151606407" style="zoom: 67%;" />
+</li>
+<li></li>
+<li><p>输入管理员基本信息</p>
+</li>
+</ol>
+<h2 id="创建商户"><a href="#创建商户" class="headerlink" title="创建商户"></a>创建商户</h2><h2 id="查看交易信息"><a href="#查看交易信息" class="headerlink" title="查看交易信息"></a>查看交易信息</h2>]]></content>
+  </entry>
+  <entry>
+    <title>API Document</title>
+    <url>/api/index.html</url>
+    <content><![CDATA[<h2 id="Document-Version"><a href="#Document-Version" class="headerlink" title="Document Version"></a>Document Version</h2><table>
+<thead>
+<tr>
+<th align="center">Date</th>
+<th align="center">Doc Version</th>
+<th align="center">Description</th>
+<th align="center">Author</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">2020/12/21</td>
+<td align="center">1.0.0</td>
+<td align="center">Create this document</td>
+<td align="center">Wu</td>
+</tr>
+</tbody></table>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Overview of AFT API:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Method</th>
+<th align="center">Endpoint</th>
+<th align="center">Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">POST</td>
+<td align="center">/oauth/token</td>
+<td align="center">generate  access token.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/va/create/close</td>
+<td align="center">create a new close virtual Account.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/va/create/open</td>
+<td align="center">create a new open virtual Account.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/va/inquiry</td>
+<td align="center">inquiry an existing va.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/va/inquiry/status</td>
+<td align="center">inquiry va status.</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/internal</td>
+<td align="center">internal transfer</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/internal/inquiry</td>
+<td align="center">internal transfer account inquiry</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/external</td>
+<td align="center">external transfer</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/external/inquiry</td>
+<td align="center">external transfer account inquiry</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/llg</td>
+<td align="center">llg transfer</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/rtgs</td>
+<td align="center">rtgs transfer</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/balance/inquiry</td>
+<td align="center">inquiry balance</td>
+</tr>
+</tbody></table>
+<h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL that you can access:</p>
+<table>
+<thead>
+<tr>
+<th align="center">URL</th>
+<th align="center">Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://dev.afinpay.co.id/">https://dev.afinpay.co.id</a></td>
+<td align="center">Development</td>
+</tr>
+<tr>
+<td align="center"><a href="https://api.afinpay.co.id/">https://api.afinpay.co.id</a></td>
+<td align="center">Production</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
     <title>Merchant Document</title>
     <url>/mch/index.html</url>
     <content><![CDATA[]]></content>
@@ -206,127 +327,6 @@
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>Administrator Document</title>
-    <url>/admin/index.html</url>
-    <content><![CDATA[<h2 id="（编辑版）"><a href="#（编辑版）" class="headerlink" title="（编辑版）"></a><center>（编辑版）</center></h2><h2 id="创建管理员"><a href="#创建管理员" class="headerlink" title="创建管理员"></a>创建管理员</h2><ol>
-<li><p>登陆管理员页面</p>
-<img src="https://cdn.jsdelivr.net/gh/maijijun/picStore@typora/img/20201224151609.png" alt="image-20201224151606407" style="zoom: 67%;" />
-</li>
-<li></li>
-<li><p>输入管理员基本信息</p>
-</li>
-</ol>
-<h2 id="创建商户"><a href="#创建商户" class="headerlink" title="创建商户"></a>创建商户</h2><h2 id="查看交易信息"><a href="#查看交易信息" class="headerlink" title="查看交易信息"></a>查看交易信息</h2>]]></content>
-  </entry>
-  <entry>
-    <title>API Document</title>
-    <url>/api/index.html</url>
-    <content><![CDATA[<h2 id="Document-Version"><a href="#Document-Version" class="headerlink" title="Document Version"></a>Document Version</h2><table>
-<thead>
-<tr>
-<th align="center">Date</th>
-<th align="center">Doc Version</th>
-<th align="center">Description</th>
-<th align="center">Author</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2020/12/21</td>
-<td align="center">1.0.0</td>
-<td align="center">Create this document</td>
-<td align="center">Wu</td>
-</tr>
-</tbody></table>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Overview of AFT API:</p>
-<table>
-<thead>
-<tr>
-<th align="center">Method</th>
-<th align="center">Endpoint</th>
-<th align="center">Usage</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">POST</td>
-<td align="center">/oauth/token</td>
-<td align="center">generate  access token.</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/va/create/close</td>
-<td align="center">create a new close virtual Account.</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/va/create/open</td>
-<td align="center">create a new open virtual Account.</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/va/inquiry</td>
-<td align="center">inquiry an existing va.</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/va/inquiry/status</td>
-<td align="center">inquiry va status.</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/internal</td>
-<td align="center">internal transfer</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/internal/inquiry</td>
-<td align="center">internal transfer account inquiry</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/external</td>
-<td align="center">external transfer</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/external/inquiry</td>
-<td align="center">external transfer account inquiry</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/llg</td>
-<td align="center">llg transfer</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/rtgs</td>
-<td align="center">rtgs transfer</td>
-</tr>
-<tr>
-<td align="center">POST</td>
-<td align="center">/transfer/balance/inquiry</td>
-<td align="center">inquiry balance</td>
-</tr>
-</tbody></table>
-<h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL that you can access:</p>
-<table>
-<thead>
-<tr>
-<th align="center">URL</th>
-<th align="center">Usage</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://dev.afinpay.co.id/">https://dev.afinpay.co.id</a></td>
-<td align="center">Development</td>
-</tr>
-<tr>
-<td align="center"><a href="https://api.afinpay.co.id/">https://api.afinpay.co.id</a></td>
-<td align="center">Production</td>
 </tr>
 </tbody></table>
 ]]></content>
@@ -838,7 +838,7 @@
 <h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/oauth/token</span> HTTP/1.1</span><br><span class="line"><span class="attribute">Host</span>: dev.afinpay.co.id</span><br><span class="line"><span class="attribute">Authorization</span>: Basic Base64(client_id:client_secret)</span><br><span class="line"><span class="attribute">Content-Type</span>: application/x-www-form-urlencoded</span><br><span class="line">grant_type=client_credentials</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">&quot;access_token&quot;</span>:<span class="string">&quot;2YotnFZFEjr1zCsicMWpAA&quot;</span>,</span><br><span class="line"><span class="attr">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,</span><br><span class="line"><span class="attr">&quot;expires_in&quot;</span>:<span class="number">3600</span>,</span><br><span class="line"><span class="attr">&quot;scope&quot;</span>:<span class="string">&quot;app&quot;</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Response-Sample"><a href="#Response-Sample" class="headerlink" title="Response Sample"></a>Response Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;access_token&quot;</span>: <span class="string">&quot;a8338cef-7e96-42ab-8cde-c262b4e4768b&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;token_type&quot;</span>: <span class="string">&quot;bearer&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;expires_in&quot;</span>: <span class="number">3600</span>, </span><br><span class="line">    <span class="attr">&quot;scope&quot;</span>: <span class="string">&quot;mch-api&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 ]]></content>
@@ -1467,6 +1467,232 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Internal Transfer</title>
+    <url>/api/transfer/internal_transfer.html</url>
+    <content><![CDATA[<p>This endpoint is used to make transfer between two accounts in same bank.</p>
+<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">POST https://dev.afinpay.co.id/transfer/internal</span><br></pre></td></tr></table></figure>
+<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Value</th>
+<th align="center">Mandatory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Authorization</td>
+<td align="center">Bearer {access_token}</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">Content-Type</td>
+<td align="center">application/json</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Key</td>
+<td align="center">{api_key}</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Timestamp</td>
+<td align="center">yyyy-MM-ddTHH:mm:ss.SSSZ</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">X-AFT-Signature</td>
+<td align="center">refer to <strong><a href="../authentication/signature.html">signature</a></strong></td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">appId</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Merchant ID</td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Version</td>
+</tr>
+<tr>
+<td align="center">bankCode</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Channel/Bank Code, <strong><a href="../appendix/bank_code.html">Details to &gt;</a></strong></td>
+</tr>
+<tr>
+<td align="center">creditAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Credit Account No.</td>
+</tr>
+<tr>
+<td align="center">debitAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Debit Account No.</td>
+</tr>
+<tr>
+<td align="center">valueCurrency</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Currency: IDR</td>
+</tr>
+<tr>
+<td align="center">beneficiaryEmailAddress</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Beneficiary Email Address</td>
+</tr>
+<tr>
+<td align="center">beneficiaryAddress1</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Beneficiary Address 1</td>
+</tr>
+<tr>
+<td align="center">beneficiaryAddress2</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">Beneficiary Address 2</td>
+</tr>
+<tr>
+<td align="center">beneficiaryName</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Beneficiary Name</td>
+</tr>
+<tr>
+<td align="center">valueDate</td>
+<td align="center">Date</td>
+<td align="center">Yes</td>
+<td align="center">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td align="center">valueAmount</td>
+<td align="center">Number</td>
+<td align="center">Yes</td>
+<td align="center">payment Amount</td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Out Order No.</td>
+</tr>
+<tr>
+<td align="center">remark</td>
+<td align="center">String</td>
+<td align="center">No</td>
+<td align="center">description</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;bankCode&quot;</span>: <span class="string">&quot;009&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress1&quot;</span>: <span class="string">&quot;address 1&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;remark&quot;</span>: <span class="string">&quot;internal transfer test&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueDate&quot;</span>: <span class="string">&quot;2021-01-18 14:18:49&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress2&quot;</span>: <span class="string">&quot;address 2&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Internal-12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">10000</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryName&quot;</span>: <span class="string">&quot;Magi&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Data Type</th>
+<th align="center">Mandatory</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">appId</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Merchant ID</td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Version</td>
+</tr>
+<tr>
+<td align="center">nonceStr</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Unique String</td>
+</tr>
+<tr>
+<td align="center">resCode</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Response Code</td>
+</tr>
+<tr>
+<td align="center">resMsg</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Response Message</td>
+</tr>
+<tr>
+<td align="center">orderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Order No.</td>
+</tr>
+<tr>
+<td align="center">outOrderNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Out Order No.</td>
+</tr>
+<tr>
+<td align="center">debitAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Debit Account No.</td>
+</tr>
+<tr>
+<td align="center">creditAccountNo</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Credit Account No.</td>
+</tr>
+<tr>
+<td align="center">valueAmount</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Payment Amount.</td>
+</tr>
+<tr>
+<td align="center">valueCurrency</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Currency: IDR</td>
+</tr>
+<tr>
+<td align="center">beneficiaryEmailAddress</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Beneficiary Email Address</td>
+</tr>
+<tr>
+<td align="center">status</td>
+<td align="center">String</td>
+<td align="center">Yes</td>
+<td align="center">Status</td>
+</tr>
+</tbody></table>
+<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;nonceStr&quot;</span>: <span class="string">&quot;7b7a6fa164494137a835731f2b5b7b84&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resCode&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resMsg&quot;</span>: <span class="string">&quot;Success&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;orderNo&quot;</span>: <span class="string">&quot;IMAY-20210118105132c5487&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Internal-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">100000</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;status&quot;</span>: <span class="string">&quot;2&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>LLG Transfer</title>
     <url>/api/transfer/llg.html</url>
     <content><![CDATA[<p>This endpoint is used to make transfer using LLG method.</p>
@@ -2031,232 +2257,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Internal Transfer</title>
-    <url>/api/transfer/internal_transfer.html</url>
-    <content><![CDATA[<p>This endpoint is used to make transfer between two accounts in same bank.</p>
-<h3 id="HTTP-Request"><a href="#HTTP-Request" class="headerlink" title="HTTP Request"></a>HTTP Request</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">POST https://dev.afinpay.co.id/transfer/internal</span><br></pre></td></tr></table></figure>
-<h3 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h3><table>
-<thead>
-<tr>
-<th align="center">Key</th>
-<th align="center">Value</th>
-<th align="center">Mandatory</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Authorization</td>
-<td align="center">Bearer {access_token}</td>
-<td align="center">Yes</td>
-</tr>
-<tr>
-<td align="center">Content-Type</td>
-<td align="center">application/json</td>
-<td align="center">Yes</td>
-</tr>
-<tr>
-<td align="center">X-AFT-Key</td>
-<td align="center">{api_key}</td>
-<td align="center">Yes</td>
-</tr>
-<tr>
-<td align="center">X-AFT-Timestamp</td>
-<td align="center">yyyy-MM-ddTHH:mm:ss.SSSZ</td>
-<td align="center">Yes</td>
-</tr>
-<tr>
-<td align="center">X-AFT-Signature</td>
-<td align="center">refer to <strong><a href="../authentication/signature.html">signature</a></strong></td>
-<td align="center">Yes</td>
-</tr>
-</tbody></table>
-<h3 id="Request-Body"><a href="#Request-Body" class="headerlink" title="Request Body"></a>Request Body</h3><table>
-<thead>
-<tr>
-<th align="center">Field</th>
-<th align="center">Data Type</th>
-<th align="center">Mandatory</th>
-<th align="center">Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">appId</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Merchant ID</td>
-</tr>
-<tr>
-<td align="center">version</td>
-<td align="center">String</td>
-<td align="center">No</td>
-<td align="center">Version</td>
-</tr>
-<tr>
-<td align="center">bankCode</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Channel/Bank Code, <strong><a href="../appendix/bank_code.html">Details to &gt;</a></strong></td>
-</tr>
-<tr>
-<td align="center">creditAccountNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Credit Account No.</td>
-</tr>
-<tr>
-<td align="center">debitAccountNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Debit Account No.</td>
-</tr>
-<tr>
-<td align="center">valueCurrency</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Currency: IDR</td>
-</tr>
-<tr>
-<td align="center">beneficiaryEmailAddress</td>
-<td align="center">String</td>
-<td align="center">No</td>
-<td align="center">Beneficiary Email Address</td>
-</tr>
-<tr>
-<td align="center">beneficiaryAddress1</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Beneficiary Address 1</td>
-</tr>
-<tr>
-<td align="center">beneficiaryAddress2</td>
-<td align="center">String</td>
-<td align="center">No</td>
-<td align="center">Beneficiary Address 2</td>
-</tr>
-<tr>
-<td align="center">beneficiaryName</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Beneficiary Name</td>
-</tr>
-<tr>
-<td align="center">valueDate</td>
-<td align="center">Date</td>
-<td align="center">Yes</td>
-<td align="center">yyyy-MM-dd HH:mm:ss</td>
-</tr>
-<tr>
-<td align="center">valueAmount</td>
-<td align="center">Number</td>
-<td align="center">Yes</td>
-<td align="center">payment Amount</td>
-</tr>
-<tr>
-<td align="center">outOrderNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Out Order No.</td>
-</tr>
-<tr>
-<td align="center">remark</td>
-<td align="center">String</td>
-<td align="center">No</td>
-<td align="center">description</td>
-</tr>
-</tbody></table>
-<h3 id="Request-Sample"><a href="#Request-Sample" class="headerlink" title="Request Sample"></a>Request Sample</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;bankCode&quot;</span>: <span class="string">&quot;009&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress1&quot;</span>: <span class="string">&quot;address 1&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;remark&quot;</span>: <span class="string">&quot;internal transfer test&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueDate&quot;</span>: <span class="string">&quot;2021-01-18 14:18:49&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryAddress2&quot;</span>: <span class="string">&quot;address 2&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Internal-12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">10000</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryName&quot;</span>: <span class="string">&quot;Magi&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Response-Body"><a href="#Response-Body" class="headerlink" title="Response Body"></a>Response Body</h3><table>
-<thead>
-<tr>
-<th align="center">Field</th>
-<th align="center">Data Type</th>
-<th align="center">Mandatory</th>
-<th align="center">Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">appId</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Merchant ID</td>
-</tr>
-<tr>
-<td align="center">version</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Version</td>
-</tr>
-<tr>
-<td align="center">nonceStr</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Unique String</td>
-</tr>
-<tr>
-<td align="center">resCode</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Response Code</td>
-</tr>
-<tr>
-<td align="center">resMsg</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Response Message</td>
-</tr>
-<tr>
-<td align="center">orderNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Order No.</td>
-</tr>
-<tr>
-<td align="center">outOrderNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Out Order No.</td>
-</tr>
-<tr>
-<td align="center">debitAccountNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Debit Account No.</td>
-</tr>
-<tr>
-<td align="center">creditAccountNo</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Credit Account No.</td>
-</tr>
-<tr>
-<td align="center">valueAmount</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Payment Amount.</td>
-</tr>
-<tr>
-<td align="center">valueCurrency</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Currency: IDR</td>
-</tr>
-<tr>
-<td align="center">beneficiaryEmailAddress</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Beneficiary Email Address</td>
-</tr>
-<tr>
-<td align="center">status</td>
-<td align="center">String</td>
-<td align="center">Yes</td>
-<td align="center">Status</td>
-</tr>
-</tbody></table>
-<h3 id="Response-Simple"><a href="#Response-Simple" class="headerlink" title="Response Simple"></a>Response Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;appId&quot;</span>: <span class="string">&quot;1000000&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;nonceStr&quot;</span>: <span class="string">&quot;7b7a6fa164494137a835731f2b5b7b84&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resCode&quot;</span>: <span class="string">&quot;0&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;resMsg&quot;</span>: <span class="string">&quot;Success&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;orderNo&quot;</span>: <span class="string">&quot;IMAY-20210118105132c5487&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;outOrderNo&quot;</span>: <span class="string">&quot;Internal-123456789&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;debitAccountNo&quot;</span>: <span class="string">&quot;12345678&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;creditAccountNo&quot;</span>: <span class="string">&quot;87654321&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;valueAmount&quot;</span>: <span class="number">100000</span>, </span><br><span class="line">    <span class="attr">&quot;valueCurrency&quot;</span>: <span class="string">&quot;IDR&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;beneficiaryEmailAddress&quot;</span>: <span class="string">&quot;magi2020@gmail.com&quot;</span>, </span><br><span class="line">    <span class="attr">&quot;status&quot;</span>: <span class="string">&quot;2&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>Create Close VA</title>
     <url>/api/va/create_va_close.html</url>
     <content><![CDATA[<p>This endpoint is used to create new virtual account.</p>
@@ -2637,6 +2637,11 @@
 ]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/api/va/index.html</url>
+    <content><![CDATA[<h3 id="Create-Close-VA-gt-gt"><a href="#Create-Close-VA-gt-gt" class="headerlink" title="Create Close VA &gt;&gt;"></a><a href="./create_va_close.html">Create Close VA &gt;&gt;</a></h3><h3 id="Create-Open-VA-gt-gt"><a href="#Create-Open-VA-gt-gt" class="headerlink" title="Create Open VA &gt;&gt;"></a><a href="./create_va_open.html">Create Open VA &gt;&gt;</a></h3><h3 id="Inquiry-VA-gt-gt"><a href="#Inquiry-VA-gt-gt" class="headerlink" title="Inquiry VA &gt;&gt;"></a><a href="./inquiry_va.html">Inquiry VA &gt;&gt;</a></h3><h3 id="Get-VA-Status-gt-gt"><a href="#Get-VA-Status-gt-gt" class="headerlink" title="Get VA Status &gt;&gt;"></a><a href="./get_va_status.html">Get VA Status &gt;&gt;</a></h3>]]></content>
+  </entry>
+  <entry>
     <title>Get VA Status</title>
     <url>/api/va/get_va_status.html</url>
     <content><![CDATA[<p> This endpoint is used to get status from an existing virtual account.</p>
@@ -2775,11 +2780,6 @@
 
 <h3 id="Error-Simple"><a href="#Error-Simple" class="headerlink" title="Error Simple"></a>Error Simple</h3><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/api/va/index.html</url>
-    <content><![CDATA[<h3 id="Create-Close-VA-gt-gt"><a href="#Create-Close-VA-gt-gt" class="headerlink" title="Create Close VA &gt;&gt;"></a><a href="./create_va_close.html">Create Close VA &gt;&gt;</a></h3><h3 id="Create-Open-VA-gt-gt"><a href="#Create-Open-VA-gt-gt" class="headerlink" title="Create Open VA &gt;&gt;"></a><a href="./create_va_open.html">Create Open VA &gt;&gt;</a></h3><h3 id="Inquiry-VA-gt-gt"><a href="#Inquiry-VA-gt-gt" class="headerlink" title="Inquiry VA &gt;&gt;"></a><a href="./inquiry_va.html">Inquiry VA &gt;&gt;</a></h3><h3 id="Get-VA-Status-gt-gt"><a href="#Get-VA-Status-gt-gt" class="headerlink" title="Get VA Status &gt;&gt;"></a><a href="./get_va_status.html">Get VA Status &gt;&gt;</a></h3>]]></content>
   </entry>
   <entry>
     <title>Inquiry VA</title>
