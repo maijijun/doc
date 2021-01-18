@@ -31,7 +31,7 @@
 <meta property="og:description" content="Document Version   Date Doc Version Description Author    2020&#x2F;12&#x2F;21 1.0.0 Create this document Wu   APIOverview of AFT API:    Method Endpoint Usage    POST &#x2F;oauth&#x2F;token generate  access token.   POS">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T08:44:17.000Z">
-<meta property="article:modified_time" content="2020-12-24T07:58:21.124Z">
+<meta property="article:modified_time" content="2021-01-18T07:28:57.045Z">
 <meta property="article:author" content="Magi">
 <meta name="twitter:card" content="summary">
 
@@ -368,53 +368,58 @@
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">/va/create/close</td>
+<td align="center">create a new close virtual Account.</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center">/bill/create</td>
-<td align="center">create a new virtual Account.</td>
+<td align="center">/va/create/open</td>
+<td align="center">create a new open virtual Account.</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center">/bill/query</td>
+<td align="center">/va/inquiry</td>
 <td align="center">inquiry an existing va.</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center">/bill/status</td>
+<td align="center">/va/inquiry/status</td>
 <td align="center">inquiry va status.</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center">/payment/payment</td>
-<td align="center">do payment</td>
+<td align="center">/transfer/internal</td>
+<td align="center">internal transfer</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center">/payment/details</td>
-<td align="center">inquiry transfer status.</td>
+<td align="center">/transfer/internal/inquiry</td>
+<td align="center">internal transfer account inquiry</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">/transfer/external</td>
+<td align="center">external transfer</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">/transfer/external/inquiry</td>
+<td align="center">external transfer account inquiry</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">/transfer/llg</td>
+<td align="center">llg transfer</td>
 </tr>
 <tr>
 <td align="center">POST</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">/transfer/rtgs</td>
+<td align="center">rtgs transfer</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">/transfer/balance/inquiry</td>
+<td align="center">inquiry balance</td>
 </tr>
 </tbody></table>
 <h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL that you can access:</p>
